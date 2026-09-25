@@ -1,0 +1,9 @@
+category,n_devices,n_with_mac,n_without_mac
+Power Outlet,20,14,6
+Camera,19,17,2
+Sensor,19,0,19
+Home Automation,16,8,8
+Lighting,12,7,5
+NextGen,10,10,0
+Audio,8,8,0
+Hub,6,6,0

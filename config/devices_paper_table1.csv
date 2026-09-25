@@ -1,0 +1,111 @@
+device_name,category,mac,block
+Amazon Alexa Echo Dot 1,Audio,1C:FE:2B:98:16:DD,victim
+Amazon Alexa Echo Dot 2,Audio,A0:D0:DC:C4:08:FF,victim
+Amazon Alexa Echo Spot,Audio,1C:12:B0:9B:0C:EC,victim
+Amazon Alexa Echo Studio,Audio,08:7C:39:CE:6E:2A,victim
+Amazon Echo Show,Audio,2C:71:FF:05:F1:15,victim
+Google Nest Mini Speaker,Audio,CC:F4:11:9C:D0:00,victim
+harman kardon (Ampak Technology),Audio,B0:F1:EC:D3:E7:98,victim
+Sonos One Speaker,Audio,48:A6:B8:F9:1B:88,victim
+AMCREST WiFi Camera,Camera,9C:8E:CD:1D:AB:9F,victim
+Arlo Base Station,Camera,3C:37:86:6F:B9:51,victim
+Arlo Q Indoor Camera,Camera,40:5D:82:35:14:C8,victim
+Borun/Sichuan-AI Camera,Camera,C0:E7:BF:0A:79:D1,victim
+DCS8000LHA1 D-Link Mini Camera,Camera,B0:C5:54:59:2E:99,victim
+HeimVision Smart WiFi Camera,Camera,44:01:BB:EC:10:4A,victim
+Home Eye Camera,Camera,34:75:63:73:F3:36,victim
+Luohe Cam Dog,Camera,7C:A7:B0:CD:18:32,victim
+Nest Indoor Camera,Camera,44:BB:3B:00:39:07,victim
+Netatmo Camera,Camera,70:EE:50:68:0E:32,victim
+Rbcior Camera,Camera,10:5A:17:97:A5:C6,victim
+SIMCAM 1S (AMPAKTec),Camera,10:2C:6B:1B:43:BE,victim
+TP-Link Tapo Camera,Camera,6C:5A:B0:44:1D:90,victim
+Wyze Camera,Camera,7C:78:B2:86:0D:81,victim
+Yi Indoor Camera,Camera,84:7A:B6:64:62:58,victim
+Yi Indoor 2 Camera,Camera,84:7A:B6:62:3A:6C,victim
+Yi Outdoor Camera,Camera,2C:D2:6B:66:D2:87,victim
+Eufy HomeBase 2,Hub,8C:85:80:6C:B6:47,victim
+Amazon Plug,Power Outlet,B8:5F:98:D0:76:E6,victim
+Atomi Coffee Maker,Home Automation,68:57:2D:56:AC:47,victim
+Cocoon Smart HVAC Fan,Home Automation,08:3A:F2:1F:BC:68,victim
+Globe Lamp ESP_B1680C,Lighting,50:02:91:B1:68:0C,victim
+GoSund Bulb,Lighting,C4:DD:57:13:07:C6,victim
+Lumiman bulb,Lighting,84:E3:42:42:ED:0B,victim
+Philips Hue Bridge,Hub,00:17:88:60:D6:4F,victim
+Smart Board,Home Automation,00:02:75:F6:E3:CB,victim
+Teckin Light Strip,Lighting,18:69:D8:EB:D4:3E,victim
+Teckin Plug 1,Power Outlet,D4:A6:51:76:06:64,victim
+Teckin Plug 2,Power Outlet,D4:A6:51:78:97:4E,victim
+Wemo smart plug 1,Power Outlet,30:23:03:F3:84:2B,victim
+Wemo smart plug 2,Power Outlet,30:23:03:F3:57:CB,victim
+Yutron Plug 1,Power Outlet,D4:A6:51:20:91:D1,victim
+Yutron Plug 2,Power Outlet,D4:A6:51:21:6C:29,victim
+LG Smart TV,Home Automation,AC:F1:08:4E:00:82,victim
+Netatmo Weather Station,Home Automation,70:EE:50:6B:A8:1A,victim
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E6:F4,victim
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E4:C6,victim
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E5:02,victim
+Fibaro Door/Window Sensor 1,Sensor,,victim
+Fibaro Door/Window Sensor 2,Sensor,,victim
+Fibaro Door/Window Sensor 3,Sensor,,victim
+Fibaro Flood Sensor 1,Sensor,,victim
+Fibaro Flood Sensor 2,Sensor,,victim
+Fibaro Motion Sensor 1,Sensor,,victim
+Fibaro Motion Sensor 2,Sensor,,victim
+Fibaro Motion Sensor 3,Sensor,,victim
+Fibaro Motion Sensor 4,Sensor,,victim
+Fibaro Motion Sensor 5,Sensor,,victim
+Fibaro Wall Plug 1,Power Outlet,,victim
+Fibaro Wall Plug 2,Power Outlet,,victim
+Ring Alarm Keypad,Home Automation,,victim
+Ring Range Extender,Home Automation,,victim
+Ring Contact Sensor (1),Sensor,,victim
+Ring Contact Sensor (2),Sensor,,victim
+Gosund Power strip (1),Power Outlet,50:02:91:1A:CE:E1,victim
+GoSund Power strip (2),Power Outlet,B8:F0:09:03:9A:AF,victim
+GoSund Smart plug WP2 (1),Power Outlet,B8:F0:09:03:29:79,victim
+GoSund Smart Plug WP2 (2),Power Outlet,50:02:91:10:AC:D8,victim
+GoSund Smart plug WP2 (3),Power Outlet,50:02:91:10:09:8F,victim
+GoSund Smart Plug WP3 (1),Power Outlet,C4:DD:57:0C:39:94,victim
+Gosund Smart Plug WP3 (2),Power Outlet,24:A1:60:14:7F:F9,victim
+Govee Smart Humidifier,Home Automation,D4:AD:FC:29:C8:A2,victim
+HeimVision SmartLife Radio/Lamp,Lighting,D4:A6:51:30:64:B7,victim
+iRobot Roomba,Home Automation,50:14:79:37:80:18,victim
+LampUX RGB,Lighting,F4:CF:A2:34:48:6B,victim
+Levoit Air Purifier,Home Automation,1C:9D:C2:8C:9A:94,victim
+LIFX Lightbulb,Lighting,D0:73:D5:35:FB:C8,victim
+SmartThings Hub,Hub,28:6D:97:7A:2B:2D,victim
+AeoTec Smart Home Hub,Hub,28:6D:97:9E:F4:D5,victim
+Sengled Smart Plug 2,Power Outlet,,victim
+SmartThings Button,Home Automation,,victim
+SmartThings Smart Bulb 3,Lighting,,victim
+Sonoff Smart Plug 1,Power Outlet,,victim
+AeoTec TriSensor,Sensor,,victim
+AeoTec Doorbell 6,Home Automation,,victim
+AeoTec Indoor Siren,Home Automation,,victim
+AeoTec Smart Switch 7,Home Automation,,victim
+AeoTec Water Sensor 6,Sensor,,victim
+AeoTec NanoMote Quad,Home Automation,,victim
+AeoTec Door/Window Sensor 7 Pro,Sensor,,victim
+AeoTec Temperature and Humidity Sensor,Sensor,,victim
+Philips Hue White 1,Lighting,,victim
+Philips Hue White 2,Lighting,,victim
+SmartThings Smart Bulb 1,Lighting,,victim
+SmartThings Smart Bulb 2,Lighting,,victim
+Aeotec Button,Home Automation,,victim
+AeoTec Motion Sensor,Sensor,,victim
+AeoTec Multipurpose Sensor,Sensor,,victim
+AeoTec Water Leak Sensor,Sensor,,victim
+Sengled Smart Plug 1,Power Outlet,,victim
+Sonoff Smart Plug 2,Power Outlet,,victim
+Arlo Ultra 2 Outdoor Camera,Camera,,victim
+Raspberry Pi 4 4GB,NextGen,E4:5F:01:55:90:C4,attacker
+Raspberry Pi 4 8GB,NextGen,DC:A6:32:DC:27:D5,attacker
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E4:AB,attacker
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E5:A4,attacker
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E4:D5,attacker
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E5:EF,attacker
+Raspberry Pi 4 2GB,NextGen,DC:A6:32:C9:E4:90,attacker
+Fibaro Home Center Lite,Hub,AC:17:02:05:34:27,attacker_block
+Ring Base Station,Hub,B0:09:DA:3E:82:6C,attacker_block
+Eufy Doorbell Camera,Camera,,attacker_block
