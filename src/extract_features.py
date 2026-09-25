@@ -127,7 +127,7 @@ def main():
     ap.add_argument('--out-dir', default=ROOT / 'data/interim/features_meta', type=Path)
     ap.add_argument('--tmp-dir', default=ROOT / 'data/tmp', type=Path)
     ap.add_argument('--workers', type=int, default=max(1, (os.cpu_count() or 2) - 2))
-    ap.add_argument('--chunk-packets', type=int, default=100_000,
+    ap.add_argument('--chunk-packets', type=int, default=20_000,
                     help='accepted packets per chunk (multiple of 10); official tcpdump split was ~10 MB')
     ap.add_argument('--only', nargs='*', default=None, help='pcap stems to process (default: all)')
     ap.add_argument('--force', action='store_true', help='re-extract even if a sidecar exists')
