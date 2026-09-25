@@ -1,0 +1,89 @@
+mac,device_name,category,role,sent_packets,received_packets,total_packets,peak_attack,peak_received
+1C:FE:2B:98:16:DD,Amazon Alexa Echo Dot 1,Audio,victim,455769,78796257,79252026,DDoS-ICMP_Flood,15787965
+1C:12:B0:9B:0C:EC,Amazon Alexa Echo Spot,Audio,victim,395313,48173092,48568405,DDoS-PSHACK_Flood,11382204
+9C:8E:CD:1D:AB:9F,AMCREST WiFi Camera,Camera,victim,298156,18135242,18433398,DDoS-SynonymousIP_Flood,12032654
+2C:71:FF:05:F1:15,Amazon Echo Show,Audio,victim,75923,15384462,15460385,DDoS-SynonymousIP_Flood,12909807
+28:6D:97:9E:F4:D5,AeoTec Smart Home Hub,Hub,victim,21333,12799823,12821156,DDoS-RSTFINFlood,11989659
+A0:D0:DC:C4:08:FF,Amazon Alexa Echo Dot 2,Audio,victim,82141,8227238,8309379,DDoS-TCP_Flood,4289589
+CC:F4:11:9C:D0:00,Google Nest Mini Speaker,Audio,victim,81842,7349364,7431206,DDoS-SYN_Flood,6701211
+8C:85:80:6C:B6:47,Eufy HomeBase 2,Hub,victim,279892,2405701,2685593,DDoS-SynonymousIP_Flood,1853342
+B0:C5:54:59:2E:99,DCS8000LHA1 D-Link Mini Camera,Camera,victim,333908,1256519,1590427,DDoS-ACK_Fragmentation,878305
+3C:18:A0:41:C3:A0,Gateway/Router candidate (not in paper),Network,gateway_candidate,891178,987002,1878180,DDoS-SlowLoris,411558
+DC:A6:32:DC:27:D5,Raspberry Pi 4 8GB,NextGen,attacker,29834591,742899,30577490,DDoS-HTTP_Flood,394220
+DC:A6:32:C9:E4:AB,Raspberry Pi 4 2GB,NextGen,attacker,34556665,552436,35109101,DDoS-HTTP_Flood,257081
+DC:A6:32:C9:E4:90,Raspberry Pi 4 2GB,NextGen,attacker,26893311,525248,27418559,DDoS-HTTP_Flood,278364
+DC:A6:32:C9:E5:A4,Raspberry Pi 4 2GB,NextGen,attacker,23978107,487029,24465136,DDoS-HTTP_Flood,296704
+E4:5F:01:55:90:C4,Raspberry Pi 4 4GB,NextGen,attacker,25870427,480346,26350773,DDoS-HTTP_Flood,261000
+DC:A6:32:C9:E5:EF,Raspberry Pi 4 2GB,NextGen,attacker,25314686,447246,25761932,DDoS-HTTP_Flood,221210
+DC:A6:32:C9:E4:D5,Raspberry Pi 4 2GB,NextGen,attacker,26468797,434400,26903197,DDoS-HTTP_Flood,222628
+40:5D:82:35:14:C8,Arlo Q Indoor Camera,Camera,victim,226216,195213,421429,DDoS-SlowLoris,162541
+6C:5A:B0:44:1D:90,TP-Link Tapo Camera,Camera,victim,154972,153983,308955,DDoS-SlowLoris,141488
+50:02:91:B1:68:0C,Globe Lamp ESP_B1680C,Lighting,victim,10184,99277,109461,DDoS-ACK_Fragmentation,96547
+44:01:BB:EC:10:4A,HeimVision Smart WiFi Camera,Camera,victim,98933,95905,194838,DDoS-SlowLoris,90285
+44:BB:3B:00:39:07,Nest Indoor Camera,Camera,victim,93274,85412,178686,DDoS-SlowLoris,66702
+AC:17:02:05:34:27,Fibaro Home Center Lite,Hub,victim,76823,75189,152012,DDoS-SYN_Flood,19801
+B0:F1:EC:D3:E7:98,harman kardon (Ampak Technology),Audio,victim,412033,68898,480931,DDoS-SlowLoris,60037
+00:17:88:60:D6:4F,Philips Hue Bridge,Hub,victim,265637,66830,332467,DDoS-SlowLoris,62558
+DC:A6:32:C9:E5:02,Raspberry Pi 4 2GB (victim block),NextGen,victim,340097,56844,396941,DDoS-SlowLoris,55676
+DC:A6:32:C9:E4:C6,Raspberry Pi 4 2GB (victim block),NextGen,victim,331080,55679,386759,DDoS-SlowLoris,55277
+DC:A6:32:C9:E6:F4,Raspberry Pi 4 2GB (victim block),NextGen,victim,318696,54775,373471,DDoS-SlowLoris,54391
+70:EE:50:68:0E:32,Netatmo Camera,Camera,victim,203939,49768,253707,DDoS-SlowLoris,40167
+56:4F:8A:E1:F3:2D,,Unknown,unknown,53353,37198,90551,DDoS-SlowLoris,19482
+08:7C:39:CE:6E:2A,Amazon Alexa Echo Studio,Audio,victim,43046,29645,72691,DDoS-SlowLoris,9183
+7C:78:B2:86:0D:81,Wyze Camera,Camera,victim,35793,28691,64484,DDoS-SlowLoris,9038
+28:6D:97:7A:2B:2D,SmartThings Hub,Hub,victim,30089,20133,50222,DDoS-SlowLoris,9430
+EE:06:3B:B8:D1:DF,,Unknown,unknown,14529,14476,29005,DDoS-UDP_Flood,5556
+D0:73:D5:35:FB:C8,LIFX Lightbulb,Lighting,victim,8599,12584,21183,DDoS-SlowLoris,12461
+34:75:63:73:F3:36,Home Eye Camera,Camera,victim,17040,12574,29614,DDoS-SlowLoris,4944
+AC:F1:08:4E:00:82,LG Smart TV,Home Automation,victim,39187,12472,51659,DDoS-SlowLoris,3316
+10:2C:6B:1B:43:BE,SIMCAM 1S (AMPAKTec),Camera,victim,14324,10710,25034,DDoS-SYN_Flood,2926
+00:02:75:F6:E3:CB,Smart Board,Home Automation,victim,12821,10086,22907,DDoS-SlowLoris,8469
+70:EE:50:6B:A8:1A,Netatmo Weather Station,Home Automation,victim,12276,9843,22119,DDoS-SlowLoris,2156
+24:05:88:30:6F:89,,Unknown,unknown,8716,9212,17928,DDoS-SlowLoris,3000
+B8:5F:98:D0:76:E6,Amazon Plug,Power Outlet,victim,8764,7739,16503,DDoS-SYN_Flood,912
+3C:37:86:6F:B9:51,Arlo Base Station,Camera,victim,11594,7690,19284,DDoS-HTTP_Flood,3171
+84:7A:B6:64:62:58,Yi Indoor Camera,Camera,victim,9221,7263,16484,DDoS-SlowLoris,2209
+10:5A:17:97:A5:C6,Rbcior Camera,Camera,victim,12419,6756,19175,DDoS-SlowLoris,1387
+2C:D2:6B:66:D2:87,Yi Outdoor Camera,Camera,victim,7473,6380,13853,DDoS-SlowLoris,1434
+84:E3:42:42:ED:0B,Lumiman bulb,Lighting,victim,12918,6146,19064,DDoS-UDP_Fragmentation,1035
+B0:09:DA:3E:82:6C,Ring Base Station,Hub,victim,6855,6051,12906,DDoS-SlowLoris,3441
+84:7A:B6:62:3A:6C,Yi Indoor 2 Camera,Camera,victim,7016,5868,12884,DDoS-SlowLoris,2041
+48:A6:B8:F9:1B:88,Sonos One Speaker,Audio,victim,8190,5850,14040,DDoS-SYN_Flood,816
+1C:9D:C2:8C:9A:94,Levoit Air Purifier,Home Automation,victim,8644,5805,14449,DDoS-SlowLoris,1307
+08:3A:F2:1F:BC:68,Cocoon Smart HVAC Fan,Home Automation,victim,5393,5663,11056,DDoS-ICMP_Fragmentation,1373
+D4:AD:FC:29:C8:A2,Govee Smart Humidifier,Home Automation,victim,4616,4378,8994,DDoS-SYN_Flood,617
+18:69:D8:EB:D4:3E,Teckin Light Strip,Lighting,victim,10778,4291,15069,DDoS-SYN_Flood,692
+50:02:91:1A:CE:E1,Gosund Power strip 1,Power Outlet,victim,12156,3583,15739,DDoS-SYN_Flood,493
+50:02:91:10:09:8F,GoSund Smart plug WP2 3,Power Outlet,victim,11907,3423,15330,DDoS-SYN_Flood,440
+50:02:91:10:AC:D8,GoSund Smart Plug WP2 2,Power Outlet,victim,11794,3407,15201,DDoS-SYN_Flood,487
+C4:DD:57:13:07:C6,GoSund Bulb,Lighting,victim,11845,3364,15209,DDoS-SYN_Flood,460
+B8:F0:09:03:29:79,GoSund Smart plug WP2 1,Power Outlet,victim,11884,3317,15201,DDoS-UDP_Fragmentation,452
+24:A1:60:14:7F:F9,Gosund Smart Plug WP3 2,Power Outlet,victim,11966,3275,15241,DDoS-ICMP_Fragmentation,425
+C0:E7:BF:0A:79:D1,Borun/Sichuan-AI Camera,Camera,victim,5642,3258,8900,DDoS-RSTFINFlood,816
+C4:DD:57:0C:39:94,GoSund Smart Plug WP3 1,Power Outlet,victim,11712,3228,14940,DDoS-UDP_Fragmentation,444
+F4:CF:A2:34:48:6B,LampUX RGB,Lighting,victim,11287,3223,14510,DDoS-ICMP_Flood,373
+E8:1B:69:F8:D4:E3,,Unknown,unknown,14310,3209,17519,DDoS-HTTP_Flood,798
+30:23:03:F3:57:CB,Wemo smart plug 2,Power Outlet,victim,3107,3091,6198,DDoS-HTTP_Flood,1583
+B8:F0:09:03:9A:AF,GoSund Power strip 2,Power Outlet,victim,11419,3079,14498,DDoS-UDP_Fragmentation,379
+7C:A7:B0:CD:18:32,Luohe Cam Dog,Camera,victim,4255,3018,7273,DDoS-SlowLoris,759
+00:A3:D1:07:6F:03,,Unknown,unknown,19062,2784,21846,DDoS-SlowLoris,858
+D4:A6:51:21:6C:29,Yutron Plug 2,Power Outlet,victim,7275,2683,9958,DDoS-SYN_Flood,354
+D4:A6:51:78:97:4E,Teckin Plug 2,Power Outlet,victim,7237,2485,9722,DDoS-SYN_Flood,349
+D4:A6:51:20:91:D1,Yutron Plug 1,Power Outlet,victim,7212,2423,9635,DDoS-UDP_Flood,289
+E8:1B:69:F8:D6:E6,,Unknown,unknown,7598,2421,10019,DDoS-SlowLoris,783
+D4:A6:51:76:06:64,Teckin Plug 1,Power Outlet,victim,7047,2366,9413,DDoS-UDP_Flood,349
+D4:A6:51:30:64:B7,HeimVision SmartLife Radio/Lamp,Lighting,victim,3435,2350,5785,DDoS-SYN_Flood,719
+00:0C:29:1C:55:4A,,Unknown,unknown,2888,1882,4770,DDoS-HTTP_Flood,1882
+68:57:2D:56:AC:47,Atomi Coffee Maker,Home Automation,victim,5685,1847,7532,DDoS-SYN_Flood,339
+B0:09:DA:3E:82:6B,,Unknown,unknown,1431,1453,2884,DDoS-TCP_Flood,414
+30:23:03:F3:84:2B,Wemo smart plug 1,Power Outlet,victim,1953,1345,3298,DDoS-SYN_Flood,397
+50:14:79:37:80:18,iRobot Roomba,Home Automation,victim,1163,1156,2319,DDoS-ICMP_Fragmentation,324
+00:A3:D1:07:6F:47,,Unknown,unknown,135,24,159,DDoS-HTTP_Flood,24
+00:00:00:00:00:00,,Unknown,unknown,0,9,9,DDoS-SYN_Flood,8
+DA:EE:29:71:BB:92,,Unknown,unknown,0,8,8,DDoS-HTTP_Flood,8
+7A:78:9F:21:10:49,,Unknown,unknown,5,0,5,DDoS-ICMP_Fragmentation,0
+5C:26:0A:28:80:77,,Unknown,unknown,5194,0,5194,DDoS-ACK_Fragmentation,0
+DA:4B:5C:39:D5:76,,Unknown,unknown,4,0,4,DDoS-ICMP_Fragmentation,0
+D4:81:D7:97:D0:29,,Unknown,unknown,2837,0,2837,DDoS-ACK_Fragmentation,0
+DC:A6:32:DC:28:48,,Unknown,unknown,9,0,9,DDoS-HTTP_Flood,0
+EE:14:0B:68:6C:17,,Unknown,unknown,18,0,18,DDoS-ICMP_Fragmentation,0

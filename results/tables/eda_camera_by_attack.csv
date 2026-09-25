@@ -1,0 +1,195 @@
+attack,device_name,mac,sent_packets,received_packets,total_packets,recv_to_sent,top_peer_name,top_peer_role,top_peer_packets
+DDoS-ACK_Fragmentation,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,8278,878305,886583,106.10111137956028,Raspberry Pi 4 2GB,attacker,221817
+DDoS-ACK_Fragmentation,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,12678,564673,577351,44.53959615081243,Raspberry Pi 4 2GB,attacker,206525
+DDoS-ACK_Fragmentation,Arlo Q Indoor Camera,40:5D:82:35:14:C8,7020,6290,13310,0.896011396011396,Gateway/Router candidate (not in paper),gateway_candidate,13169
+DDoS-ACK_Fragmentation,Nest Indoor Camera,44:BB:3B:00:39:07,3177,2834,6011,0.892036512433113,Gateway/Router candidate (not in paper),gateway_candidate,5951
+DDoS-ACK_Fragmentation,Netatmo Camera,70:EE:50:68:0E:32,2880,2163,5043,0.7510416666666667,Gateway/Router candidate (not in paper),gateway_candidate,4628
+DDoS-ACK_Fragmentation,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,1014,811,1825,0.7998027613412229,Gateway/Router candidate (not in paper),gateway_candidate,1664
+DDoS-ACK_Fragmentation,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,854,790,1644,0.9250585480093677,Gateway/Router candidate (not in paper),gateway_candidate,1394
+DDoS-ACK_Fragmentation,Wyze Camera,7C:78:B2:86:0D:81,1177,782,1959,0.6644010195412065,Gateway/Router candidate (not in paper),gateway_candidate,1636
+DDoS-ACK_Fragmentation,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,1430,761,2191,0.5321678321678321,Gateway/Router candidate (not in paper),gateway_candidate,1000
+DDoS-ACK_Fragmentation,Home Eye Camera,34:75:63:73:F3:36,901,658,1559,0.730299667036626,Gateway/Router candidate (not in paper),gateway_candidate,1419
+DDoS-ACK_Fragmentation,Rbcior Camera,10:5A:17:97:A5:C6,828,561,1389,0.677536231884058,FF:FF:FF:FF:FF:FF,unknown,681
+DDoS-ACK_Fragmentation,Yi Indoor Camera,84:7A:B6:64:62:58,526,496,1022,0.9429657794676806,Gateway/Router candidate (not in paper),gateway_candidate,943
+DDoS-ACK_Fragmentation,Yi Outdoor Camera,2C:D2:6B:66:D2:87,437,436,873,0.9977116704805492,Gateway/Router candidate (not in paper),gateway_candidate,581
+DDoS-ACK_Fragmentation,Arlo Base Station,3C:37:86:6F:B9:51,494,397,891,0.8036437246963563,Gateway/Router candidate (not in paper),gateway_candidate,863
+DDoS-ACK_Fragmentation,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,380,369,749,0.9710526315789474,Gateway/Router candidate (not in paper),gateway_candidate,692
+DDoS-ACK_Fragmentation,Luohe Cam Dog,7C:A7:B0:CD:18:32,295,231,526,0.7830508474576271,Gateway/Router candidate (not in paper),gateway_candidate,470
+DDoS-ACK_Fragmentation,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,676,222,898,0.32840236686390534,Gateway/Router candidate (not in paper),gateway_candidate,582
+DDoS-HTTP_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,212128,475270,687398,2.240486875848544,Raspberry Pi 4 8GB,attacker,222943
+DDoS-HTTP_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,179829,231054,410883,1.284853944580685,Raspberry Pi 4 4GB,attacker,83175
+DDoS-HTTP_Flood,Arlo Base Station,3C:37:86:6F:B9:51,5751,3171,8922,0.5513823682837767,Gateway/Router candidate (not in paper),gateway_candidate,8787
+DDoS-HTTP_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,9092,2705,11797,0.2975142982842059,Gateway/Router candidate (not in paper),gateway_candidate,11777
+DDoS-HTTP_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,7254,1298,8552,0.17893575958092087,Gateway/Router candidate (not in paper),gateway_candidate,8286
+DDoS-HTTP_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,2489,698,3187,0.2804339092004821,Gateway/Router candidate (not in paper),gateway_candidate,3173
+DDoS-HTTP_Flood,Wyze Camera,7C:78:B2:86:0D:81,5760,641,6401,0.11128472222222222,Gateway/Router candidate (not in paper),gateway_candidate,5570
+DDoS-HTTP_Flood,Home Eye Camera,34:75:63:73:F3:36,3369,458,3827,0.13594538438705847,Gateway/Router candidate (not in paper),gateway_candidate,3789
+DDoS-HTTP_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,1273,326,1599,0.25608798114689707,Gateway/Router candidate (not in paper),gateway_candidate,1509
+DDoS-HTTP_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,1743,297,2040,0.1703958691910499,Gateway/Router candidate (not in paper),gateway_candidate,2027
+DDoS-HTTP_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,35076,278,35354,0.007925647166153495,Raspberry Pi 4 2GB,attacker,9903
+DDoS-HTTP_Flood,Netatmo Camera,70:EE:50:68:0E:32,158178,202,158380,0.0012770423194123077,Raspberry Pi 4 8GB,attacker,49468
+DDoS-HTTP_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,923,147,1070,0.15926327193932827,Gateway/Router candidate (not in paper),gateway_candidate,1057
+DDoS-HTTP_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,753,103,856,0.13678618857901725,Gateway/Router candidate (not in paper),gateway_candidate,844
+DDoS-HTTP_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,230,87,317,0.3782608695652174,Gateway/Router candidate (not in paper),gateway_candidate,186
+DDoS-HTTP_Flood,Rbcior Camera,10:5A:17:97:A5:C6,2339,0,2339,0.0,Gateway/Router candidate (not in paper),gateway_candidate,1299
+DDoS-ICMP_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,2254,1870,4124,0.8296362023070097,Gateway/Router candidate (not in paper),gateway_candidate,3959
+DDoS-ICMP_Flood,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,1586,1423,3009,0.8972257250945775,Gateway/Router candidate (not in paper),gateway_candidate,2535
+DDoS-ICMP_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,2222,1402,3624,0.630963096309631,Gateway/Router candidate (not in paper),gateway_candidate,3287
+DDoS-ICMP_Flood,Wyze Camera,7C:78:B2:86:0D:81,1207,925,2132,0.7663628831814416,Gateway/Router candidate (not in paper),gateway_candidate,1789
+DDoS-ICMP_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,810,808,1618,0.9975308641975309,Gateway/Router candidate (not in paper),gateway_candidate,1485
+DDoS-ICMP_Flood,Rbcior Camera,10:5A:17:97:A5:C6,801,589,1390,0.735330836454432,Gateway/Router candidate (not in paper),gateway_candidate,770
+DDoS-ICMP_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,608,570,1178,0.9375,Gateway/Router candidate (not in paper),gateway_candidate,986
+DDoS-ICMP_Flood,Home Eye Camera,34:75:63:73:F3:36,521,513,1034,0.9846449136276392,Gateway/Router candidate (not in paper),gateway_candidate,850
+DDoS-ICMP_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,911,479,1390,0.5257958287596048,Gateway/Router candidate (not in paper),gateway_candidate,656
+DDoS-ICMP_Flood,Netatmo Camera,70:EE:50:68:0E:32,474,373,847,0.7869198312236287,Gateway/Router candidate (not in paper),gateway_candidate,601
+DDoS-ICMP_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,342,341,683,0.9970760233918129,Gateway/Router candidate (not in paper),gateway_candidate,591
+DDoS-ICMP_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,331,339,670,1.0241691842900302,Gateway/Router candidate (not in paper),gateway_candidate,514
+DDoS-ICMP_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,273,311,584,1.1391941391941391,Gateway/Router candidate (not in paper),gateway_candidate,491
+DDoS-ICMP_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,311,269,580,0.864951768488746,Gateway/Router candidate (not in paper),gateway_candidate,466
+DDoS-ICMP_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,489,264,753,0.5398773006134969,Gateway/Router candidate (not in paper),gateway_candidate,484
+DDoS-ICMP_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,222,224,446,1.009009009009009,Gateway/Router candidate (not in paper),gateway_candidate,419
+DDoS-ICMP_Flood,Arlo Base Station,3C:37:86:6F:B9:51,270,211,481,0.7814814814814814,Gateway/Router candidate (not in paper),gateway_candidate,448
+DDoS-ICMP_Fragmentation,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,3181,2234,5415,0.7022948758252122,Gateway/Router candidate (not in paper),gateway_candidate,5145
+DDoS-ICMP_Fragmentation,Nest Indoor Camera,44:BB:3B:00:39:07,1558,1642,3200,1.0539152759948651,Gateway/Router candidate (not in paper),gateway_candidate,2631
+DDoS-ICMP_Fragmentation,Arlo Q Indoor Camera,40:5D:82:35:14:C8,3111,1548,4659,0.49758919961427195,Gateway/Router candidate (not in paper),gateway_candidate,4484
+DDoS-ICMP_Fragmentation,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,1902,1325,3227,0.6966351209253417,Gateway/Router candidate (not in paper),gateway_candidate,2697
+DDoS-ICMP_Fragmentation,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,1621,1308,2929,0.8069093152375078,Gateway/Router candidate (not in paper),gateway_candidate,2672
+DDoS-ICMP_Fragmentation,Wyze Camera,7C:78:B2:86:0D:81,1527,1214,2741,0.7950229207596594,Gateway/Router candidate (not in paper),gateway_candidate,2110
+DDoS-ICMP_Fragmentation,Rbcior Camera,10:5A:17:97:A5:C6,573,1019,1592,1.7783595113438044,Gateway/Router candidate (not in paper),gateway_candidate,1244
+DDoS-ICMP_Fragmentation,Home Eye Camera,34:75:63:73:F3:36,1129,844,1973,0.7475642161204605,Gateway/Router candidate (not in paper),gateway_candidate,1768
+DDoS-ICMP_Fragmentation,Netatmo Camera,70:EE:50:68:0E:32,1071,773,1844,0.7217553688141923,Gateway/Router candidate (not in paper),gateway_candidate,1474
+DDoS-ICMP_Fragmentation,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,1362,771,2133,0.566079295154185,Gateway/Router candidate (not in paper),gateway_candidate,1242
+DDoS-ICMP_Fragmentation,Yi Indoor Camera,84:7A:B6:64:62:58,774,626,1400,0.8087855297157622,Gateway/Router candidate (not in paper),gateway_candidate,1270
+DDoS-ICMP_Fragmentation,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,694,606,1300,0.8731988472622478,Gateway/Router candidate (not in paper),gateway_candidate,1192
+DDoS-ICMP_Fragmentation,Yi Outdoor Camera,2C:D2:6B:66:D2:87,460,423,883,0.9195652173913044,Gateway/Router candidate (not in paper),gateway_candidate,718
+DDoS-ICMP_Fragmentation,Arlo Base Station,3C:37:86:6F:B9:51,510,381,891,0.7470588235294118,Gateway/Router candidate (not in paper),gateway_candidate,819
+DDoS-ICMP_Fragmentation,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,311,290,601,0.932475884244373,Gateway/Router candidate (not in paper),gateway_candidate,523
+DDoS-ICMP_Fragmentation,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,517,285,802,0.5512572533849129,Gateway/Router candidate (not in paper),gateway_candidate,462
+DDoS-PSHACK_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,5119,1960013,1965132,382.8898222309045,Raspberry Pi 4 8GB,attacker,357922
+DDoS-PSHACK_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,1299,1298,2597,0.9992301770592764,Gateway/Router candidate (not in paper),gateway_candidate,2440
+DDoS-PSHACK_Flood,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,1744,1220,2964,0.6995412844036697,Gateway/Router candidate (not in paper),gateway_candidate,2647
+DDoS-PSHACK_Flood,Wyze Camera,7C:78:B2:86:0D:81,1060,925,1985,0.8726415094339622,Gateway/Router candidate (not in paper),gateway_candidate,1679
+DDoS-PSHACK_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,924,641,1565,0.6937229437229437,Gateway/Router candidate (not in paper),gateway_candidate,1454
+DDoS-PSHACK_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,563,629,1192,1.1172291296625223,Gateway/Router candidate (not in paper),gateway_candidate,984
+DDoS-PSHACK_Flood,Home Eye Camera,34:75:63:73:F3:36,743,515,1258,0.693135935397039,Gateway/Router candidate (not in paper),gateway_candidate,1110
+DDoS-PSHACK_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,362,361,723,0.9972375690607734,Gateway/Router candidate (not in paper),gateway_candidate,585
+DDoS-PSHACK_Flood,Netatmo Camera,70:EE:50:68:0E:32,487,347,834,0.7125256673511293,Gateway/Router candidate (not in paper),gateway_candidate,562
+DDoS-PSHACK_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,312,319,631,1.0224358974358974,Gateway/Router candidate (not in paper),gateway_candidate,593
+DDoS-PSHACK_Flood,Rbcior Camera,10:5A:17:97:A5:C6,456,316,772,0.6929824561403509,Gateway/Router candidate (not in paper),gateway_candidate,395
+DDoS-PSHACK_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,234,284,518,1.2136752136752136,Gateway/Router candidate (not in paper),gateway_candidate,481
+DDoS-PSHACK_Flood,Arlo Base Station,3C:37:86:6F:B9:51,344,261,605,0.7587209302325582,Gateway/Router candidate (not in paper),gateway_candidate,580
+DDoS-PSHACK_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,453,247,700,0.5452538631346578,Gateway/Router candidate (not in paper),gateway_candidate,435
+DDoS-PSHACK_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,249,246,495,0.9879518072289156,Gateway/Router candidate (not in paper),gateway_candidate,452
+DDoS-PSHACK_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,421,229,650,0.5439429928741093,Gateway/Router candidate (not in paper),gateway_candidate,321
+DDoS-PSHACK_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,256,205,461,0.80078125,Gateway/Router candidate (not in paper),gateway_candidate,417
+DDoS-RSTFINFlood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,4126,4620,8746,1.1197285506543868,Gateway/Router candidate (not in paper),gateway_candidate,8744
+DDoS-RSTFINFlood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,2034,2201,4235,1.0821042281219273,Gateway/Router candidate (not in paper),gateway_candidate,4191
+DDoS-RSTFINFlood,Nest Indoor Camera,44:BB:3B:00:39:07,1906,1926,3832,1.0104931794333682,Gateway/Router candidate (not in paper),gateway_candidate,3209
+DDoS-RSTFINFlood,Wyze Camera,7C:78:B2:86:0D:81,1620,1471,3091,0.9080246913580247,Gateway/Router candidate (not in paper),gateway_candidate,2694
+DDoS-RSTFINFlood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,2237,1436,3673,0.6419311578006258,Gateway/Router candidate (not in paper),gateway_candidate,3588
+DDoS-RSTFINFlood,Netatmo Camera,70:EE:50:68:0E:32,1405,957,2362,0.6811387900355872,Gateway/Router candidate (not in paper),gateway_candidate,1926
+DDoS-RSTFINFlood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,883,816,1699,0.9241223103057757,Gateway/Router candidate (not in paper),gateway_candidate,1036
+DDoS-RSTFINFlood,Home Eye Camera,34:75:63:73:F3:36,749,555,1304,0.7409879839786382,Gateway/Router candidate (not in paper),gateway_candidate,1232
+DDoS-RSTFINFlood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,923,487,1410,0.5276273022751896,Gateway/Router candidate (not in paper),gateway_candidate,612
+DDoS-RSTFINFlood,Rbcior Camera,10:5A:17:97:A5:C6,608,404,1012,0.6644736842105263,Gateway/Router candidate (not in paper),gateway_candidate,506
+DDoS-RSTFINFlood,Yi Indoor Camera,84:7A:B6:64:62:58,370,381,751,1.0297297297297296,Gateway/Router candidate (not in paper),gateway_candidate,711
+DDoS-RSTFINFlood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,354,357,711,1.0084745762711864,Gateway/Router candidate (not in paper),gateway_candidate,526
+DDoS-RSTFINFlood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,265,270,535,1.0188679245283019,Gateway/Router candidate (not in paper),gateway_candidate,488
+DDoS-RSTFINFlood,Arlo Base Station,3C:37:86:6F:B9:51,346,262,608,0.7572254335260116,Gateway/Router candidate (not in paper),gateway_candidate,558
+DDoS-RSTFINFlood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,198,240,438,1.2121212121212122,Gateway/Router candidate (not in paper),gateway_candidate,415
+DDoS-RSTFINFlood,Luohe Cam Dog,7C:A7:B0:CD:18:32,186,150,336,0.8064516129032258,Gateway/Router candidate (not in paper),gateway_candidate,301
+DDoS-SYN_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,14686,2870769,2885455,195.4765763311998,Raspberry Pi 4 2GB,attacker,1152130
+DDoS-SYN_Flood,Wyze Camera,7C:78:B2:86:0D:81,4660,4012,8672,0.8609442060085837,Gateway/Router candidate (not in paper),gateway_candidate,8513
+DDoS-SYN_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,3330,3090,6420,0.9279279279279279,Gateway/Router candidate (not in paper),gateway_candidate,6161
+DDoS-SYN_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,3006,2997,6003,0.9970059880239521,Gateway/Router candidate (not in paper),gateway_candidate,5831
+DDoS-SYN_Flood,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,3587,2926,6513,0.8157234457764149,Gateway/Router candidate (not in paper),gateway_candidate,6016
+DDoS-SYN_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,1646,1797,3443,1.091737545565006,Gateway/Router candidate (not in paper),gateway_candidate,2981
+DDoS-SYN_Flood,Home Eye Camera,34:75:63:73:F3:36,1466,1546,3012,1.0545702592087312,Gateway/Router candidate (not in paper),gateway_candidate,2889
+DDoS-SYN_Flood,Netatmo Camera,70:EE:50:68:0E:32,1853,1506,3359,0.8127361036157582,Gateway/Router candidate (not in paper),gateway_candidate,2997
+DDoS-SYN_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,1567,841,2408,0.5366943203573707,Gateway/Router candidate (not in paper),gateway_candidate,1174
+DDoS-SYN_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,723,716,1439,0.9903181189488244,Gateway/Router candidate (not in paper),gateway_candidate,1050
+DDoS-SYN_Flood,Rbcior Camera,10:5A:17:97:A5:C6,928,647,1575,0.697198275862069,Gateway/Router candidate (not in paper),gateway_candidate,932
+DDoS-SYN_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,648,639,1287,0.9861111111111112,Gateway/Router candidate (not in paper),gateway_candidate,1211
+DDoS-SYN_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,919,533,1452,0.5799782372143635,Gateway/Router candidate (not in paper),gateway_candidate,935
+DDoS-SYN_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,505,507,1012,1.003960396039604,Gateway/Router candidate (not in paper),gateway_candidate,932
+DDoS-SYN_Flood,Arlo Base Station,3C:37:86:6F:B9:51,549,398,947,0.7249544626593807,Gateway/Router candidate (not in paper),gateway_candidate,850
+DDoS-SYN_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,307,352,659,1.1465798045602607,Gateway/Router candidate (not in paper),gateway_candidate,588
+DDoS-SYN_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,339,337,676,0.9941002949852508,Gateway/Router candidate (not in paper),gateway_candidate,611
+DDoS-SlowLoris,Arlo Q Indoor Camera,40:5D:82:35:14:C8,183985,162541,346526,0.8834470201375112,Gateway/Router candidate (not in paper),gateway_candidate,346523
+DDoS-SlowLoris,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,143303,144434,287737,1.0078923679197225,Raspberry Pi 4 2GB,attacker,45533
+DDoS-SlowLoris,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,139306,141488,280794,1.015663359797855,Raspberry Pi 4 2GB,attacker,44458
+DDoS-SlowLoris,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,53941,90285,144226,1.6737731966407743,Raspberry Pi 4 2GB,attacker,21231
+DDoS-SlowLoris,Nest Indoor Camera,44:BB:3B:00:39:07,68305,66702,135007,0.9765317326696435,Gateway/Router candidate (not in paper),gateway_candidate,135007
+DDoS-SlowLoris,Netatmo Camera,70:EE:50:68:0E:32,33652,40167,73819,1.193599191727089,Gateway/Router candidate (not in paper),gateway_candidate,22755
+DDoS-SlowLoris,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,37392,37293,74685,0.9973523748395379,Raspberry Pi 4 2GB,attacker,12722
+DDoS-SlowLoris,Wyze Camera,7C:78:B2:86:0D:81,7653,9038,16691,1.1809747811315825,Gateway/Router candidate (not in paper),gateway_candidate,15471
+DDoS-SlowLoris,Home Eye Camera,34:75:63:73:F3:36,5000,4944,9944,0.9888,Gateway/Router candidate (not in paper),gateway_candidate,9862
+DDoS-SlowLoris,Yi Indoor Camera,84:7A:B6:64:62:58,2532,2209,4741,0.8724328593996841,Gateway/Router candidate (not in paper),gateway_candidate,4741
+DDoS-SlowLoris,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,2294,2041,4335,0.8897122929380994,Gateway/Router candidate (not in paper),gateway_candidate,4335
+DDoS-SlowLoris,Yi Outdoor Camera,2C:D2:6B:66:D2:87,1483,1434,2917,0.9669588671611599,Gateway/Router candidate (not in paper),gateway_candidate,2917
+DDoS-SlowLoris,Rbcior Camera,10:5A:17:97:A5:C6,3098,1387,4485,0.44770819883796,Gateway/Router candidate (not in paper),gateway_candidate,2771
+DDoS-SlowLoris,Arlo Base Station,3C:37:86:6F:B9:51,1776,1370,3146,0.7713963963963963,Gateway/Router candidate (not in paper),gateway_candidate,2932
+DDoS-SlowLoris,Luohe Cam Dog,7C:A7:B0:CD:18:32,1038,759,1797,0.7312138728323699,Gateway/Router candidate (not in paper),gateway_candidate,1796
+DDoS-SynonymousIP_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,1054,12032654,12033708,11416.18026565465,Raspberry Pi 4 2GB,attacker,3093230
+DDoS-SynonymousIP_Flood,Wyze Camera,7C:78:B2:86:0D:81,1495,1405,2900,0.939799331103679,Gateway/Router candidate (not in paper),gateway_candidate,2593
+DDoS-SynonymousIP_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,1285,1241,2526,0.9657587548638132,Gateway/Router candidate (not in paper),gateway_candidate,2298
+DDoS-SynonymousIP_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,1314,836,2150,0.6362252663622526,Gateway/Router candidate (not in paper),gateway_candidate,1949
+DDoS-SynonymousIP_Flood,Netatmo Camera,70:EE:50:68:0E:32,679,578,1257,0.8512518409425626,Gateway/Router candidate (not in paper),gateway_candidate,1034
+DDoS-SynonymousIP_Flood,Home Eye Camera,34:75:63:73:F3:36,676,513,1189,0.7588757396449705,Gateway/Router candidate (not in paper),gateway_candidate,919
+DDoS-SynonymousIP_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,895,441,1336,0.49273743016759775,FF:FF:FF:FF:FF:FF,unknown,558
+DDoS-SynonymousIP_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,427,431,858,1.009367681498829,Gateway/Router candidate (not in paper),gateway_candidate,708
+DDoS-SynonymousIP_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,423,386,809,0.9125295508274232,Gateway/Router candidate (not in paper),gateway_candidate,702
+DDoS-SynonymousIP_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,346,334,680,0.9653179190751445,Gateway/Router candidate (not in paper),gateway_candidate,482
+DDoS-SynonymousIP_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,319,310,629,0.9717868338557993,Gateway/Router candidate (not in paper),gateway_candidate,429
+DDoS-SynonymousIP_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,308,297,605,0.9642857142857143,Gateway/Router candidate (not in paper),gateway_candidate,498
+DDoS-SynonymousIP_Flood,Arlo Base Station,3C:37:86:6F:B9:51,290,229,519,0.7896551724137931,Gateway/Router candidate (not in paper),gateway_candidate,509
+DDoS-SynonymousIP_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,276,229,505,0.8297101449275363,Gateway/Router candidate (not in paper),gateway_candidate,371
+DDoS-SynonymousIP_Flood,Rbcior Camera,10:5A:17:97:A5:C6,421,221,642,0.5249406175771971,FF:FF:FF:FF:FF:FF,unknown,380
+DDoS-TCP_Flood,Wyze Camera,7C:78:B2:86:0D:81,6889,6126,13015,0.8892437218754536,Gateway/Router candidate (not in paper),gateway_candidate,12925
+DDoS-TCP_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,3543,3156,6699,0.890770533446232,Gateway/Router candidate (not in paper),gateway_candidate,6614
+DDoS-TCP_Flood,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,2781,1686,4467,0.6062567421790723,Gateway/Router candidate (not in paper),gateway_candidate,4298
+DDoS-TCP_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,1621,1623,3244,1.001233806292412,Gateway/Router candidate (not in paper),gateway_candidate,3027
+DDoS-TCP_Flood,Netatmo Camera,70:EE:50:68:0E:32,1840,1541,3381,0.8375,Gateway/Router candidate (not in paper),gateway_candidate,3081
+DDoS-TCP_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,2474,1307,3781,0.5282942603071948,Gateway/Router candidate (not in paper),gateway_candidate,3375
+DDoS-TCP_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,708,683,1391,0.9646892655367232,Gateway/Router candidate (not in paper),gateway_candidate,1176
+DDoS-TCP_Flood,Home Eye Camera,34:75:63:73:F3:36,774,610,1384,0.7881136950904393,Gateway/Router candidate (not in paper),gateway_candidate,1280
+DDoS-TCP_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,576,590,1166,1.0243055555555556,Gateway/Router candidate (not in paper),gateway_candidate,1097
+DDoS-TCP_Flood,Rbcior Camera,10:5A:17:97:A5:C6,822,562,1384,0.683698296836983,Gateway/Router candidate (not in paper),gateway_candidate,939
+DDoS-TCP_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,755,515,1270,0.6821192052980133,Gateway/Router candidate (not in paper),gateway_candidate,1196
+DDoS-TCP_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,852,441,1293,0.5176056338028169,Gateway/Router candidate (not in paper),gateway_candidate,892
+DDoS-TCP_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,351,353,704,1.0056980056980056,Gateway/Router candidate (not in paper),gateway_candidate,641
+DDoS-TCP_Flood,Arlo Base Station,3C:37:86:6F:B9:51,429,334,763,0.7785547785547785,Gateway/Router candidate (not in paper),gateway_candidate,713
+DDoS-TCP_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,280,276,556,0.9857142857142858,Gateway/Router candidate (not in paper),gateway_candidate,535
+DDoS-TCP_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,237,274,511,1.1561181434599157,Gateway/Router candidate (not in paper),gateway_candidate,417
+DDoS-UDP_Flood,Arlo Q Indoor Camera,40:5D:82:35:14:C8,2680,2333,5013,0.8705223880597015,Gateway/Router candidate (not in paper),gateway_candidate,4854
+DDoS-UDP_Flood,Wyze Camera,7C:78:B2:86:0D:81,1677,1457,3134,0.8688133571854502,Gateway/Router candidate (not in paper),gateway_candidate,2938
+DDoS-UDP_Flood,Nest Indoor Camera,44:BB:3B:00:39:07,1330,1411,2741,1.0609022556390977,Gateway/Router candidate (not in paper),gateway_candidate,2407
+DDoS-UDP_Flood,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,1356,1343,2699,0.9904129793510325,Gateway/Router candidate (not in paper),gateway_candidate,2615
+DDoS-UDP_Flood,SIMCAM 1S (AMPAKTec),10:2C:6B:1B:43:BE,1870,1340,3210,0.7165775401069518,Gateway/Router candidate (not in paper),gateway_candidate,2895
+DDoS-UDP_Flood,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,1963,1257,3220,0.6403464085583291,Gateway/Router candidate (not in paper),gateway_candidate,3089
+DDoS-UDP_Flood,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,1055,612,1667,0.5800947867298578,Gateway/Router candidate (not in paper),gateway_candidate,836
+DDoS-UDP_Flood,Home Eye Camera,34:75:63:73:F3:36,594,590,1184,0.9932659932659933,Gateway/Router candidate (not in paper),gateway_candidate,1033
+DDoS-UDP_Flood,Netatmo Camera,70:EE:50:68:0E:32,501,538,1039,1.0738522954091816,Gateway/Router candidate (not in paper),gateway_candidate,867
+DDoS-UDP_Flood,Rbcior Camera,10:5A:17:97:A5:C6,749,527,1276,0.7036048064085447,Gateway/Router candidate (not in paper),gateway_candidate,703
+DDoS-UDP_Flood,Yi Indoor Camera,84:7A:B6:64:62:58,423,468,891,1.1063829787234043,Gateway/Router candidate (not in paper),gateway_candidate,832
+DDoS-UDP_Flood,Yi Outdoor Camera,2C:D2:6B:66:D2:87,437,420,857,0.9610983981693364,Gateway/Router candidate (not in paper),gateway_candidate,738
+DDoS-UDP_Flood,Borun/Sichuan-AI Camera,C0:E7:BF:0A:79:D1,623,363,986,0.5826645264847512,Gateway/Router candidate (not in paper),gateway_candidate,647
+DDoS-UDP_Flood,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,340,349,689,1.026470588235294,Gateway/Router candidate (not in paper),gateway_candidate,640
+DDoS-UDP_Flood,Arlo Base Station,3C:37:86:6F:B9:51,387,326,713,0.8423772609819121,Gateway/Router candidate (not in paper),gateway_candidate,696
+DDoS-UDP_Flood,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,241,277,518,1.1493775933609958,Gateway/Router candidate (not in paper),gateway_candidate,455
+DDoS-UDP_Flood,Luohe Cam Dog,7C:A7:B0:CD:18:32,214,219,433,1.0233644859813085,Gateway/Router candidate (not in paper),gateway_candidate,392
+DDoS-UDP_Fragmentation,AMCREST WiFi Camera,9C:8E:CD:1D:AB:9F,3022,186934,189956,61.85771012574454,Raspberry Pi 4 2GB,attacker,66584
+DDoS-UDP_Fragmentation,Arlo Q Indoor Camera,40:5D:82:35:14:C8,5935,5583,11518,0.9406908171861836,Gateway/Router candidate (not in paper),gateway_candidate,11440
+DDoS-UDP_Fragmentation,Nest Indoor Camera,44:BB:3B:00:39:07,3233,3249,6482,1.004948963810702,Gateway/Router candidate (not in paper),gateway_candidate,5668
+DDoS-UDP_Fragmentation,Home Eye Camera,34:75:63:73:F3:36,1118,828,1946,0.740608228980322,Gateway/Router candidate (not in paper),gateway_candidate,1811
+DDoS-UDP_Fragmentation,HeimVision Smart WiFi Camera,44:01:BB:EC:10:4A,1352,721,2073,0.533284023668639,Gateway/Router candidate (not in paper),gateway_candidate,943
+DDoS-UDP_Fragmentation,Wyze Camera,7C:78:B2:86:0D:81,1068,695,1763,0.650749063670412,Gateway/Router candidate (not in paper),gateway_candidate,1467
+DDoS-UDP_Fragmentation,Netatmo Camera,70:EE:50:68:0E:32,919,623,1542,0.6779107725788901,Gateway/Router candidate (not in paper),gateway_candidate,1223
+DDoS-UDP_Fragmentation,TP-Link Tapo Camera,6C:5A:B0:44:1D:90,545,575,1120,1.055045871559633,Gateway/Router candidate (not in paper),gateway_candidate,1049
+DDoS-UDP_Fragmentation,Yi Outdoor Camera,2C:D2:6B:66:D2:87,559,551,1110,0.9856887298747764,Gateway/Router candidate (not in paper),gateway_candidate,825
+DDoS-UDP_Fragmentation,Rbcior Camera,10:5A:17:97:A5:C6,796,523,1319,0.657035175879397,Gateway/Router candidate (not in paper),gateway_candidate,757
+DDoS-UDP_Fragmentation,Yi Indoor Camera,84:7A:B6:64:62:58,552,511,1063,0.9257246376811594,Gateway/Router candidate (not in paper),gateway_candidate,998
+DDoS-UDP_Fragmentation,Yi Indoor 2 Camera,84:7A:B6:62:3A:6C,485,459,944,0.9463917525773196,Gateway/Router candidate (not in paper),gateway_candidate,890
+DDoS-UDP_Fragmentation,DCS8000LHA1 D-Link Mini Camera,B0:C5:54:59:2E:99,378,388,766,1.0264550264550265,Gateway/Router candidate (not in paper),gateway_candidate,648
+DDoS-UDP_Fragmentation,Arlo Base Station,3C:37:86:6F:B9:51,448,350,798,0.78125,Gateway/Router candidate (not in paper),gateway_candidate,756
+DDoS-UDP_Fragmentation,Luohe Cam Dog,7C:A7:B0:CD:18:32,307,240,547,0.7817589576547231,Gateway/Router candidate (not in paper),gateway_candidate,510

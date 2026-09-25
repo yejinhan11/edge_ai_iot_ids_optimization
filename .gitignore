@@ -6,3 +6,5 @@ __pycache__/
 .ipynb_checkpoints/
 results/figures/*.png
 *.log
+results/models/
+data/tmp/

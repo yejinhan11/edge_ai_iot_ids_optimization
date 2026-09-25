@@ -33,7 +33,8 @@ def macs_by(**filters):
     return frozenset(d.index)
 
 
-ATTACKER_MACS = macs_by(role='attacker')
+ATTACKER_MACS = macs_by(role='attacker')      # the 7 Raspberry Pis the paper lists as attackers
+NEXTGEN_MACS = macs_by(category='NextGen')    # all 10 Raspberry Pis (3 'victim' Pis also send floods in HTTP_Flood)
 CAMERA_MACS = macs_by(category='Camera')
 GATEWAY_MACS = macs_by(role='gateway_candidate')
 VICTIM_MACS = macs_by(role='victim')
