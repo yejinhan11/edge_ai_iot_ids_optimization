@@ -46,7 +46,7 @@ python src/train_rf.py --tag loao_syn --split loao --holdout DDoS-SYN_Flood
 - `tools/pcap2csv_metadata_v2/Feature_extraction_fast.py` = 공식 CICIoT2023 pcap2csv 추출기에서
   (1) `rdpcap()` 전체 로드 제거, (2) 10패킷 윈도우 집계를 groupby로 벡터화한 것. 세 샘플 pcap에서 원본과 출력이
   수치·문자열 모두 완전히 일치함을 확인했고 5~6배 빠르다.
-- tcpdump 대신 `split_pcap.py`가 **채택 패킷(IPv4/ARP) 10만 개** 단위, 10패킷 경계에 맞춰 분할한다 → 청크 경계에서
+- tcpdump 대신 `split_pcap.py`가 **채택 패킷(IPv4/ARP) 2만 개** 단위, 10패킷 경계에 맞춰 분할한다 → 청크 경계에서
   깨지는 윈도우가 없다.
 - 윈도우 크기는 모든 파일 **10패킷**으로 통일 (논문 공식 CSV는 DDoS 100 / Benign 10으로 달라 윈도우 크기 자체가
   라벨을 누설할 수 있음).
