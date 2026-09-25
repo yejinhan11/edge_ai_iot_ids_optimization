@@ -1,0 +1,9 @@
+category,ddos_devices_seen,ddos_packets,benign_devices_seen,benign_windows,ddos_devices_seen_win,ddos_windows,benign_windows_pct
+Camera,17,21598425,14.0,741724.0,17.0,2155158.0,71.7
+Power Outlet,14,170877,14.0,9172.0,14.0,3912.0,0.9
+Home Automation,8,141035,8.0,26487.0,8.0,10976.0,2.6
+Audio,8,159589063,7.0,153173.0,8.0,16005060.0,14.8
+Hub,6,16054356,6.0,95967.0,6.0,1602037.0,9.3
+Lighting,7,200281,6.0,8522.0,7.0,14379.0,0.8
+Network,1,1878180,,,,,
+Unknown,17,202765,,,,,
