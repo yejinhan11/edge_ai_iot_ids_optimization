@@ -65,4 +65,4 @@ def model_stats(model):
     ests = getattr(model, 'estimators_', [])
     return dict(n_trees=len(ests),
                 total_nodes=int(sum(e.tree_.node_count for e in ests)),
-                max_depth=int(max((e.tree_.max_depth for e in ests), default=0)))
+                tree_max_depth=int(max((e.tree_.max_depth for e in ests), default=0)))

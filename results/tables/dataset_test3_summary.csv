@@ -1,0 +1,4 @@
+file,rows_in,drop_short,drop_iat,rate_inf,std_nan,rows_out,sec,label
+BenignTraffic_meta.csv,362278,1,0,0,0,362277,93.2,0
+DDoS-HTTP_Flood-_meta.csv,287559,0,1,0,0,287558,23.4,1
+DDoS-SYN_Flood_meta.csv,2659333,181,0,20,0,2659152,119.3,1
