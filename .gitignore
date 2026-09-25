@@ -1,0 +1,8 @@
+# data (24 GB pcap + derived) never goes to git
+data/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+results/figures/*.png
+*.log

@@ -1,0 +1,72 @@
+mac,device_name,category,role,verified,source
+1C:FE:2B:98:16:DD,Amazon Alexa Echo Dot 1,Audio,victim,True,paper_table1
+A0:D0:DC:C4:08:FF,Amazon Alexa Echo Dot 2,Audio,victim,True,paper_table1
+1C:12:B0:9B:0C:EC,Amazon Alexa Echo Spot,Audio,victim,True,paper_table1
+08:7C:39:CE:6E:2A,Amazon Alexa Echo Studio,Audio,victim,True,paper_table1
+2C:71:FF:05:F1:15,Amazon Echo Show,Audio,victim,True,paper_table1
+CC:F4:11:9C:D0:00,Google Nest Mini Speaker,Audio,victim,True,paper_table1
+B0:F1:EC:D3:E7:98,harman kardon (Ampak Technology),Audio,victim,True,paper_table1
+48:A6:B8:F9:1B:88,Sonos One Speaker,Audio,victim,True,paper_table1
+9C:8E:CD:1D:AB:9F,AMCREST WiFi Camera,Camera,victim,True,paper_table1
+3C:37:86:6F:B9:51,Arlo Base Station,Camera,victim,True,paper_table1
+40:5D:82:35:14:C8,Arlo Q Indoor Camera,Camera,victim,True,paper_table1
+C0:E7:BF:0A:79:D1,Borun/Sichuan-AI Camera,Camera,victim,True,paper_table1
+B0:C5:54:59:2E:99,DCS8000LHA1 D-Link Mini Camera,Camera,victim,True,paper_table1
+44:01:BB:EC:10:4A,HeimVision Smart WiFi Camera,Camera,victim,True,paper_table1
+34:75:63:73:F3:36,Home Eye Camera,Camera,victim,True,paper_table1
+7C:A7:B0:CD:18:32,Luohe Cam Dog,Camera,victim,True,paper_table1
+44:BB:3B:00:39:07,Nest Indoor Camera,Camera,victim,True,paper_table1
+70:EE:50:68:0E:32,Netatmo Camera,Camera,victim,True,paper_table1
+10:5A:17:97:A5:C6,Rbcior Camera,Camera,victim,True,paper_table1
+10:2C:6B:1B:43:BE,SIMCAM 1S (AMPAKTec),Camera,victim,True,paper_table1
+6C:5A:B0:44:1D:90,TP-Link Tapo Camera,Camera,victim,True,paper_table1
+7C:78:B2:86:0D:81,Wyze Camera,Camera,victim,True,paper_table1
+84:7A:B6:64:62:58,Yi Indoor Camera,Camera,victim,True,paper_table1
+84:7A:B6:62:3A:6C,Yi Indoor 2 Camera,Camera,victim,True,paper_table1
+2C:D2:6B:66:D2:87,Yi Outdoor Camera,Camera,victim,True,paper_table1
+8C:85:80:6C:B6:47,Eufy HomeBase 2,Hub,victim,True,paper_table1
+00:17:88:60:D6:4F,Philips Hue Bridge,Hub,victim,True,paper_table1
+28:6D:97:7A:2B:2D,SmartThings Hub,Hub,victim,True,paper_table1
+28:6D:97:9E:F4:D5,AeoTec Smart Home Hub,Hub,victim,True,paper_table1
+AC:17:02:05:34:27,Fibaro Home Center Lite,Hub,victim,True,paper_table1_attacker_block_spillover
+B0:09:DA:3E:82:6C,Ring Base Station,Hub,victim,True,paper_table1_attacker_block_spillover
+B8:5F:98:D0:76:E6,Amazon Plug,Power Outlet,victim,True,paper_table1
+D4:A6:51:76:06:64,Teckin Plug 1,Power Outlet,victim,True,paper_table1
+D4:A6:51:78:97:4E,Teckin Plug 2,Power Outlet,victim,True,paper_table1
+30:23:03:F3:84:2B,Wemo smart plug 1,Power Outlet,victim,True,paper_table1
+30:23:03:F3:57:CB,Wemo smart plug 2,Power Outlet,victim,True,paper_table1
+D4:A6:51:20:91:D1,Yutron Plug 1,Power Outlet,victim,True,paper_table1
+D4:A6:51:21:6C:29,Yutron Plug 2,Power Outlet,victim,True,paper_table1
+50:02:91:1A:CE:E1,Gosund Power strip 1,Power Outlet,victim,True,paper_table1
+B8:F0:09:03:9A:AF,GoSund Power strip 2,Power Outlet,victim,True,paper_table1
+B8:F0:09:03:29:79,GoSund Smart plug WP2 1,Power Outlet,victim,True,paper_table1
+50:02:91:10:AC:D8,GoSund Smart Plug WP2 2,Power Outlet,victim,True,paper_table1
+50:02:91:10:09:8F,GoSund Smart plug WP2 3,Power Outlet,victim,True,paper_table1
+C4:DD:57:0C:39:94,GoSund Smart Plug WP3 1,Power Outlet,victim,True,paper_table1
+24:A1:60:14:7F:F9,Gosund Smart Plug WP3 2,Power Outlet,victim,True,paper_table1
+68:57:2D:56:AC:47,Atomi Coffee Maker,Home Automation,victim,True,paper_table1
+08:3A:F2:1F:BC:68,Cocoon Smart HVAC Fan,Home Automation,victim,True,paper_table1
+00:02:75:F6:E3:CB,Smart Board,Home Automation,victim,True,paper_table1
+AC:F1:08:4E:00:82,LG Smart TV,Home Automation,victim,True,paper_table1
+70:EE:50:6B:A8:1A,Netatmo Weather Station,Home Automation,victim,True,paper_table1
+D4:AD:FC:29:C8:A2,Govee Smart Humidifier,Home Automation,victim,True,paper_table1
+50:14:79:37:80:18,iRobot Roomba,Home Automation,victim,True,paper_table1
+1C:9D:C2:8C:9A:94,Levoit Air Purifier,Home Automation,victim,True,paper_table1
+50:02:91:B1:68:0C,Globe Lamp ESP_B1680C,Lighting,victim,True,paper_table1
+C4:DD:57:13:07:C6,GoSund Bulb,Lighting,victim,True,paper_table1
+84:E3:42:42:ED:0B,Lumiman bulb,Lighting,victim,True,paper_table1
+18:69:D8:EB:D4:3E,Teckin Light Strip,Lighting,victim,True,paper_table1
+D4:A6:51:30:64:B7,HeimVision SmartLife Radio/Lamp,Lighting,victim,True,paper_table1
+F4:CF:A2:34:48:6B,LampUX RGB,Lighting,victim,True,paper_table1
+D0:73:D5:35:FB:C8,LIFX Lightbulb,Lighting,victim,True,paper_table1
+DC:A6:32:C9:E6:F4,Raspberry Pi 4 2GB (victim block),NextGen,victim,True,paper_table1
+DC:A6:32:C9:E4:C6,Raspberry Pi 4 2GB (victim block),NextGen,victim,True,paper_table1
+DC:A6:32:C9:E5:02,Raspberry Pi 4 2GB (victim block),NextGen,victim,True,paper_table1
+E4:5F:01:55:90:C4,Raspberry Pi 4 4GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:DC:27:D5,Raspberry Pi 4 8GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:C9:E4:AB,Raspberry Pi 4 2GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:C9:E5:A4,Raspberry Pi 4 2GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:C9:E4:D5,Raspberry Pi 4 2GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:C9:E5:EF,Raspberry Pi 4 2GB,NextGen,attacker,True,paper_table1_attackers
+DC:A6:32:C9:E4:90,Raspberry Pi 4 2GB,NextGen,attacker,True,paper_table1_attackers
+3C:18:A0:41:C3:A0,Gateway/Router candidate (not in paper),Network,gateway_candidate,False,eda_inference
