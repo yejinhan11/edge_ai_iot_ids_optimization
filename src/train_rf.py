@@ -66,7 +66,7 @@ def main():
     else:
         is_test = ~is_train
     if SUBSETS[a.train_subset]:
-        is_train &= data[SUBSETS[a.train_subset]].to_numpy()
+        is_train = is_train & data[SUBSETS[a.train_subset]].to_numpy()
 
     rng = np.random.default_rng(a.seed)
     tr_idx = np.flatnonzero(is_train)
