@@ -7,7 +7,7 @@
 
 | 경로 | 내용 |
 |---|---|
-| `data/raw/pcap/` | CICIoT2023 PCAP 13개 (DDoS 12 + BenignTraffic 1) |
+| `data/raw/pcap/` | CICIoT2023 PCAP 16개 (DDoS 12 + BenignTraffic 0~3, Benign 4개는 같은 16시간 캡처의 연속 청크) |
 | `data/interim/device_summary/` | Colab EDA 산출물: MAC별 송수신 통계 (`all_devices_summary.csv` 등) |
 | `data/interim/features_meta/` | 파일당 `*_meta.csv`(39 feature + 12 metadata 컬럼) + `*_meta.json` 사이드카 |
 | `data/processed/dataset_v1.parquet` | 병합·정제·라벨·기기 태그가 붙은 학습 데이터 |
@@ -51,7 +51,9 @@ python src/train_rf.py --tag loao_syn --split loao --holdout DDoS-SYN_Flood
 - 윈도우 크기는 모든 파일 **10패킷**으로 통일 (논문 공식 CSV는 DDoS 100 / Benign 10으로 달라 윈도우 크기 자체가
   라벨을 누설할 수 있음).
 - metadata 컬럼(`primary_src_mac`, `primary_dst_mac`, `all_macs` 등)은 subset 선택에만 쓰고 RF 입력에 넣지 않는다.
-- 실측: HTTP_Flood(611 MB, 288만 패킷) 3.3분 / 6 workers.
+- 실측(6 workers, 청크 2만 패킷): flood 2 GB 파일 25~65분, Fragmentation/SlowLoris 2~6분, Benign 2 GB 30~65분
+  (정상 트래픽은 flow가 다양해 공식 추출기 내부 처리량이 많다). 16개 파일 합계 20,990,344 윈도우, CSV 7.7 GB.
+- 청크를 크게 잡으면(10만 패킷) 패킷당 처리 시간이 급증하므로 2만 패킷을 기본값으로 둔다.
 
 ### 데이터셋 (`build_dataset.py`)
 - 정제: 10패킷 미만 윈도우 제거, `IAT > 1e5 s`(청크 첫 윈도우 아티팩트) 제거, `Rate=inf` → 1e7 상한, `Std/Variance` NaN → 0,
