@@ -66,6 +66,31 @@ python src/train_rf.py --tag loao_syn --split loao --holdout DDoS-SYN_Flood
 - 평가 subset: all / camera / echo_dot1 / amcrest. 지표: Accuracy, Precision, Recall, F1, F1(macro), majority baseline,
   단일 스레드 추론 시간(µs/sample, samples/sec), 모델 크기(MB), 트리 노드 수, 피크 메모리.
 
+## 다른 PC에서 이어서 작업하기
+
+```
+git clone git@github.com:yejinhan11/edge_ai_iot_ids_optimization.git   # 또는 https 주소
+cd edge_ai_iot_ids_optimization
+python -m venv .venv
+.venv\Scriptsctivate            # Windows (macOS/Linux: source .venv/bin/activate)
+pip install -r requirements.txt
+python src	rain_rf.py --tag check   # git에 포함된 data/processed/dataset_v1_parts/ 로 바로 실행됨
+```
+
+git에 **포함된** 데이터: `data/processed/dataset_v1_parts/`(학습 데이터, 6개 zstd parquet ≈ 220 MB),
+`data/interim/device_summary/`, `data/interim/*.csv`, `data/interim/features_meta/*.json`(사이드카), `results/tables/`.
+RF·경량화 실험은 이것만으로 충분하다.
+
+git에 **없는** 데이터 (필요할 때만 Drive/외장디스크로 직접 복사):
+| 경로 | 크기 | 언제 필요한가 |
+|---|---|---|
+| `data/interim/features_meta/*.csv` (16개) | 7.7 GB | `build_dataset.py`로 태그·정제 규칙을 바꿔 parquet를 다시 만들 때 |
+| `data/raw/pcap/*.pcap` (16개) | 24 GB | `extract_features.py`로 feature 추출을 다시 할 때 |
+| `results/models/*.joblib` | 50~650 MB | 학습된 모델을 재사용할 때 (다시 학습하면 됨) |
+| `data/legacy/rf_cache/` | 350 MB | Colab 1차 실험 캐시, 불필요 |
+
+SSH 키는 PC마다 새로 만들어 GitHub 계정(또는 저장소 Deploy key)에 등록해야 한다.
+
 ## 폴더
 
 ```
