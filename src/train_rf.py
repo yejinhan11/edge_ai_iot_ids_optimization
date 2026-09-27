@@ -48,6 +48,10 @@ def main():
     ap.add_argument('--train-subset', choices=list(SUBSETS), default='all')
     ap.add_argument('--max-train', type=int, default=1_000_000, help='random cap on training rows')
     ap.add_argument('--n-estimators', type=int, default=100)
+    ap.add_argument('--top-k', type=int, default=None,
+                    help='use only the top-k features of --importance (default: all 38)')
+    ap.add_argument('--importance', default=ROOT / 'results/tables/rf_v1_feature_importance.csv', type=Path)
+    ap.add_argument('--min-leaf', type=int, default=1)
     ap.add_argument('--max-depth', type=int, default=None)
     ap.add_argument('--seed', type=int, default=42)
     ap.add_argument('--out-dir', default=ROOT / 'results/tables', type=Path)
@@ -57,7 +61,7 @@ def main():
     if not a.data.exists() and a.data.with_name('dataset_v1_parts').exists():
         a.data = a.data.with_name('dataset_v1_parts')   # split copy committed to git (parts < 100 MB)
     data = pd.read_parquet(a.data)
-    print(f'rows={len(data):,} features={len(FEATURES)} labels={data.binary_label.value_counts().to_dict()}')
+    print(f'rows={len(data):,} labels={data.binary_label.value_counts().to_dict()}')
     is_train = time_split(data, a.train_frac)
     if a.split == 'loao':
         if not a.holdout:
@@ -75,12 +79,16 @@ def main():
     tr_idx = np.flatnonzero(is_train)
     if len(tr_idx) > a.max_train:
         tr_idx = rng.choice(tr_idx, a.max_train, replace=False)
-    X = data[FEATURES].to_numpy(np.float32)
+    feats = FEATURES
+    if a.top_k:
+        rank = pd.read_csv(a.importance, index_col=0)['importance'].sort_values(ascending=False)
+        feats = [f for f in rank.index if f in FEATURES][:a.top_k]
+    X = data[feats].to_numpy(np.float32)
     y = data['binary_label'].to_numpy()
     print(f'train rows={len(tr_idx):,} (benign {int((y[tr_idx] == 0).sum()):,}) test rows={int(is_test.sum()):,}')
 
-    rf = RandomForestClassifier(n_estimators=a.n_estimators, max_depth=a.max_depth, class_weight='balanced',
-                                n_jobs=-1, random_state=a.seed)
+    rf = RandomForestClassifier(n_estimators=a.n_estimators, max_depth=a.max_depth, min_samples_leaf=a.min_leaf,
+                                class_weight='balanced', n_jobs=-1, random_state=a.seed)
     t = time.time()
     rf.fit(X[tr_idx], y[tr_idx])
     train_sec = time.time() - t
@@ -101,7 +109,8 @@ def main():
         m.update(inference_cost(rf, X[idx], seed=a.seed))
         m.update(dict(tag=a.tag, split=a.split, holdout=a.holdout or '', train_subset=a.train_subset,
                       test_subset=name, train_rows=len(tr_idx), train_sec=train_sec, model_mb=size_mb,
-                      n_features=len(FEATURES), n_estimators=a.n_estimators, max_depth=a.max_depth,
+                      n_features=len(feats), top_k=a.top_k or len(FEATURES), n_estimators=a.n_estimators,
+                      max_depth=a.max_depth, min_leaf=a.min_leaf,
                       peak_rss_mb=peak_rss_mb(), **mstats))
         rows.append(m)
         print(f"  {name:10s} n={m['n']:>9,} acc={m['accuracy']:.4f} f1={m['f1']:.4f} "
@@ -111,7 +120,7 @@ def main():
     a.out_dir.mkdir(parents=True, exist_ok=True)
     out = a.out_dir / f'rf_{a.tag}.csv'
     pd.DataFrame(rows).to_csv(out, index=False)
-    imp = pd.Series(rf.feature_importances_, index=FEATURES).sort_values(ascending=False)
+    imp = pd.Series(rf.feature_importances_, index=feats).sort_values(ascending=False)
     imp.to_csv(a.out_dir / f'rf_{a.tag}_feature_importance.csv', header=['importance'])
     a.model_dir.mkdir(parents=True, exist_ok=True)
     joblib.dump(rf, a.model_dir / f'rf_{a.tag}.joblib', compress=3)
