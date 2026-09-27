@@ -12,7 +12,7 @@ Cleaning (all counts are logged to the summary):
 
 Metadata (NOT features; used only to pick evaluation subsets):
   has_attacker, n_victim_macs, victim_device (name), victim_mac, victim_category,
-  has_camera, has_echo_dot1, has_amcrest, primary_src_mac, primary_dst_mac,
+  has_camera, has_audio, has_echo_dot1, has_amcrest, primary_src_mac, primary_dst_mac,
   source_pcap, attack_type, binary_label, window_start_ts, row_in_file
 Victim MACs = MACs in the window that are not Raspberry Pis (all 10 NextGen MACs: the 3 the
 paper lists as victims also send flood traffic in HTTP_Flood), not the gateway candidate and
@@ -29,8 +29,8 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'src'))
-from devices import (AMCREST, CAMERA_MACS, ECHO_DOT_1, GATEWAY_MACS, NEXTGEN_MACS,  # noqa: E402
-                     is_group_mac, load_devices)
+from devices import (AMCREST, AUDIO_MACS, CAMERA_MACS, ECHO_DOT_1, GATEWAY_MACS,  # noqa: E402
+                     NEXTGEN_MACS, is_group_mac, load_devices)
 
 FEATURES_OFFICIAL = ['Header_Length', 'Protocol Type', 'Time_To_Live', 'Rate', 'fin_flag_number',
                      'syn_flag_number', 'rst_flag_number', 'psh_flag_number', 'ack_flag_number',
@@ -43,7 +43,7 @@ FEATURES = [c for c in FEATURES_OFFICIAL if c not in DROP_FEATURES]
 RATE_CAP = 1e7          # 10 packets / 1 us
 IAT_MAX = 1e5           # seconds; anything larger is the chunk-start artefact
 TAG_COLS = ['has_attacker', 'n_victim_macs', 'victim_mac', 'victim_device', 'victim_category',
-            'has_camera', 'has_echo_dot1', 'has_amcrest']
+            'has_camera', 'has_audio', 'has_echo_dot1', 'has_amcrest']
 
 
 class Tagger:
@@ -75,7 +75,8 @@ class Tagger:
         else:
             vname, vcat = '', 'None'
         out = (bool(attackers), len(victims), vmac, vname, vcat,
-               any(m in CAMERA_MACS for m in victims), ECHO_DOT_1 in vset, AMCREST in vset)
+               any(m in CAMERA_MACS for m in victims), any(m in AUDIO_MACS for m in victims),
+               ECHO_DOT_1 in vset, AMCREST in vset)
         self.cache[key] = out
         return out
 
@@ -149,8 +150,8 @@ def main():
 
     print(f'\nwrote {a.out} rows={len(data):,} features={len(FEATURES)}')
     print('label counts:', data['binary_label'].value_counts().to_dict())
-    print('subset sizes: camera=%d  echo_dot1=%d  amcrest=%d  has_attacker=%d' % (
-        data['has_camera'].sum(), data['has_echo_dot1'].sum(), data['has_amcrest'].sum(),
+    print('subset sizes: camera=%d  audio=%d  echo_dot1=%d  amcrest=%d  has_attacker=%d' % (
+        data['has_camera'].sum(), data['has_audio'].sum(), data['has_echo_dot1'].sum(), data['has_amcrest'].sum(),
         data['has_attacker'].sum()))
     print(pd.crosstab(data['attack_type'], data['victim_category']).to_string())
 

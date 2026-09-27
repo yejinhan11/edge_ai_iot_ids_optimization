@@ -1,5 +1,5 @@
 """Train one Random Forest (DDoS vs Benign) and evaluate it on the full test set and on
-device subsets (Camera / Echo Dot 1 / AMCREST).  Metadata columns are never used as features.
+device subsets (Camera / Audio / Echo Dot 1 / AMCREST).  Metadata columns are never used as features.
 
 Splits
   time   : per source_pcap, first 70% of windows (by row order) -> train, last 30% -> test
@@ -28,7 +28,8 @@ from build_dataset import FEATURES  # noqa: E402
 from metrics import (classification_metrics, inference_cost, model_size_mb, model_stats,  # noqa: E402
                      peak_rss_mb)
 
-SUBSETS = {'all': None, 'camera': 'has_camera', 'echo_dot1': 'has_echo_dot1', 'amcrest': 'has_amcrest'}
+SUBSETS = {'all': None, 'camera': 'has_camera', 'audio': 'has_audio', 'echo_dot1': 'has_echo_dot1',
+           'amcrest': 'has_amcrest'}
 
 
 def time_split(data, train_frac):
