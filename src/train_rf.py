@@ -54,6 +54,8 @@ def main():
     ap.add_argument('--model-dir', default=ROOT / 'results/models', type=Path)
     a = ap.parse_args()
 
+    if not a.data.exists() and a.data.with_name('dataset_v1_parts').exists():
+        a.data = a.data.with_name('dataset_v1_parts')   # split copy committed to git (parts < 100 MB)
     data = pd.read_parquet(a.data)
     print(f'rows={len(data):,} features={len(FEATURES)} labels={data.binary_label.value_counts().to_dict()}')
     is_train = time_split(data, a.train_frac)

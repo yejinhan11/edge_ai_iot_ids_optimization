@@ -1,9 +1,16 @@
-# ---- data: 24 GB pcap + derived features/models never go to git ----
-data/
+# ---- large data never goes to git (GitHub limit: 100 MB per file) ----
+# data/raw/ = 16 pcap (24 GB); data/tmp/ = chunks+logs; rf_cache = old pkl cache (350 MB)
+# features_meta/*.csv = 39-feature CSVs (7.7 GB, json sidecars are kept)
+# dataset_v1.parquet = single 352 MB file; the <100 MB zstd parts in dataset_v1_parts/ ARE committed
+data/raw/
+data/tmp/
+data/legacy/rf_cache/
+data/interim/features_meta/*.csv
+data/processed/dataset_v1.parquet
+data/processed/dataset_test3.parquet
 results/models/
 *.pcap
 *.pcapng
-*.parquet
 *.pkl
 *.joblib
 *.log
