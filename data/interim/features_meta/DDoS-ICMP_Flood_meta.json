@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-ICMP_Flood.pcap",
+  "pcap_bytes": 2048000069,
+  "attack_type": "DDoS-ICMP_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1340,
+  "packets_read": 26793240,
+  "packets_accepted": 26790856,
+  "rows": 2679086,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 1421.9,
+  "finished": "2026-09-25 21:04:43"
+}

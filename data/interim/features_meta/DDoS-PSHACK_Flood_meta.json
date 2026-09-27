@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-PSHACK_Flood.pcap",
+  "pcap_bytes": 2048000022,
+  "attack_type": "DDoS-PSHACK_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1339,
+  "packets_read": 26774357,
+  "packets_accepted": 26771116,
+  "rows": 2677112,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 3224.3,
+  "finished": "2026-09-25 20:30:00"
+}

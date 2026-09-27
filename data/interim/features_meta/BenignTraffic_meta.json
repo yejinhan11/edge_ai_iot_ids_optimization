@@ -1,0 +1,17 @@
+{
+  "pcap": "BenignTraffic.pcap",
+  "pcap_bytes": 2048000100,
+  "attack_type": "Benign",
+  "binary_label": 0,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 182,
+  "packets_read": 3664164,
+  "packets_accepted": 3622775,
+  "rows": 362278,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 6,
+  "elapsed_sec": 1764.2,
+  "finished": "2026-09-25 18:31:16"
+}

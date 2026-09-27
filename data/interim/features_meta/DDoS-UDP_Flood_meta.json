@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-UDP_Flood.pcap",
+  "pcap_bytes": 2048000061,
+  "attack_type": "DDoS-UDP_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1333,
+  "packets_read": 26653551,
+  "packets_accepted": 26650250,
+  "rows": 2665025,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 3615.9,
+  "finished": "2026-09-25 23:09:34"
+}

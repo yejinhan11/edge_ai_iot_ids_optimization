@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-HTTP_Flood-.pcap",
+  "pcap_bytes": 610856427,
+  "attack_type": "DDoS-HTTP_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 100000,
+  "chunks": 29,
+  "packets_read": 2881005,
+  "packets_accepted": 2875590,
+  "rows": 287559,
+  "code_hash": "85c2ed87da4e",
+  "extractor": "Feature_extraction_fast",
+  "workers": 6,
+  "elapsed_sec": 195.7,
+  "finished": "2026-09-25 17:37:51"
+}

@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-ACK_Fragmentation.pcap",
+  "pcap_bytes": 2048001110,
+  "attack_type": "DDoS-ACK_Fragmentation",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 125,
+  "packets_read": 2503835,
+  "packets_accepted": 2498356,
+  "rows": 249836,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 301.4,
+  "finished": "2026-09-25 20:35:01"
+}

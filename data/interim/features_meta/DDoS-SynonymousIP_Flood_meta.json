@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-SynonymousIP_Flood.pcap",
+  "pcap_bytes": 2048000024,
+  "attack_type": "DDoS-SynonymousIP_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1343,
+  "packets_read": 26855630,
+  "packets_accepted": 26852421,
+  "rows": 2685243,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 3875.1,
+  "finished": "2026-09-25 19:36:16"
+}

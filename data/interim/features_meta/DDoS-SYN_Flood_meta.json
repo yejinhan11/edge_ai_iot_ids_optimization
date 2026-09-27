@@ -1,0 +1,18 @@
+{
+  "pcap": "DDoS-SYN_Flood.pcap",
+  "pcap_bytes": 2048000063,
+  "attack_type": "DDoS-SYN_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": null,
+  "chunks": 205,
+  "packets_read": 26597011,
+  "packets_accepted": null,
+  "rows": 2659333,
+  "code_hash": "legacy-colab",
+  "extractor": "Feature_extraction_metadata (Colab, tcpdump -C 10 splits, workers=1)",
+  "workers": 1,
+  "elapsed_sec": 11185,
+  "finished": "2026-09-24",
+  "note": "Produced by notebooks/CICIoT2023_MAC_metadata_추출_v2 (1).ipynb. 181 boundary windows (<10 packets) come from the 10 MB tcpdump splits; build_dataset.py drops them."
+}

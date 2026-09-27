@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-UDP_Fragmentation.pcap",
+  "pcap_bytes": 2048000788,
+  "attack_type": "DDoS-UDP_Fragmentation",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 113,
+  "packets_read": 2248843,
+  "packets_accepted": 2243805,
+  "rows": 224381,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 359.9,
+  "finished": "2026-09-25 20:41:01"
+}

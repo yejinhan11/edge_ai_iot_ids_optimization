@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-RSTFINFlood.pcap",
+  "pcap_bytes": 2048000045,
+  "attack_type": "DDoS-RSTFINFlood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1335,
+  "packets_read": 26686473,
+  "packets_accepted": 26683145,
+  "rows": 2668315,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 1853.5,
+  "finished": "2026-09-25 21:37:18"
+}

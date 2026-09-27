@@ -1,0 +1,13 @@
+file,category,packets,bytes
+DDoS-ACK_Fragmentation.pcap,DDoS-ACK_Fragmentation,2503835,2007939726
+DDoS-HTTP_Flood-.pcap,DDoS-HTTP_Flood-,2881005,564760323
+DDoS-ICMP_Flood.pcap,DDoS-ICMP_Flood,26793240,1619308205
+DDoS-ICMP_Fragmentation.pcap,DDoS-ICMP_Fragmentation,2064692,2014966020
+DDoS-PSHACK_Flood.pcap,DDoS-PSHACK_Flood,26774357,1619610286
+DDoS-RSTFINFlood.pcap,DDoS-RSTFINFlood,26686473,1621016453
+DDoS-SYN_Flood.pcap,DDoS-SYN_Flood,26597011,1622447863
+DDoS-SlowLoris.pcap,DDoS-SlowLoris,2351454,637984446
+DDoS-SynonymousIP_Flood.pcap,DDoS-SynonymousIP_Flood,26855630,1618309920
+DDoS-TCP_Flood.pcap,DDoS-TCP_Flood,26570958,1622864683
+DDoS-UDP_Flood.pcap,DDoS-UDP_Flood,26653551,1621543221
+DDoS-UDP_Fragmentation.pcap,DDoS-UDP_Fragmentation,2248843,2012019276

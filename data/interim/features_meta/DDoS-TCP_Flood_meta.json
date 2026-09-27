@@ -1,0 +1,17 @@
+{
+  "pcap": "DDoS-TCP_Flood.pcap",
+  "pcap_bytes": 2048000035,
+  "attack_type": "DDoS-TCP_Flood",
+  "binary_label": 1,
+  "window": 10,
+  "chunk_packets": 20000,
+  "chunks": 1329,
+  "packets_read": 26570958,
+  "packets_accepted": 26567030,
+  "rows": 2656703,
+  "code_hash": "e1cda9f2f154",
+  "extractor": "Feature_extraction_fast",
+  "workers": 5,
+  "elapsed_sec": 1581.5,
+  "finished": "2026-09-25 22:09:18"
+}
