@@ -72,9 +72,9 @@ python src/train_rf.py --tag loao_syn --split loao --holdout DDoS-SYN_Flood
 git clone git@github.com:yejinhan11/edge_ai_iot_ids_optimization.git   # 또는 https 주소
 cd edge_ai_iot_ids_optimization
 python -m venv .venv
-.venv\Scriptsctivate            # Windows (macOS/Linux: source .venv/bin/activate)
+.venv\Scripts\activate            # Windows (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
-python src	rain_rf.py --tag check   # git에 포함된 data/processed/dataset_v1_parts/ 로 바로 실행됨
+python src/train_rf.py --tag check   # git에 포함된 data/processed/dataset_v1_parts/ 로 바로 실행됨
 ```
 
 git에 **포함된** 데이터: `data/processed/dataset_v1_parts/`(학습 데이터, 6개 zstd parquet ≈ 220 MB),
