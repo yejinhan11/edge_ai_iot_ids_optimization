@@ -115,8 +115,9 @@ md.append('모든 결과는 각 PCAP 캡처의 **첫 2 GB 청크**(HTTP_Flood, S
           '이 문서와 그림은 `python src/report_all_results.py`로 다시 만들 수 있다.\n')
 
 section('0. 실험 설계 요약')
-md.append('**조합 수.** feature 5종 × 트리 4종 × 깊이 4종 × min_leaf 3종 = 240개 전체 격자는 돌리지 않았다. '
-          '한 번에 한 변수씩 바꾸는 방식으로 아래 **47개 설정**을 학습했고, 마지막에 후보 5개를 평가 3종으로 재학습(15회)했다.\n')
+md.append('**조합 수.** feature 5종 × 트리 4종 × 깊이 4종 × min_leaf 3종을 모두 조합한 240개 설정 전체를 학습한 적은 없다. '
+          '한 번에 한 변수씩 바꾸는 방식으로 아래 **47개 설정만** 학습했고, 마지막에 후보 5개를 평가 3종으로 재학습(15회)했다. '
+          '이 문서의 모든 표는 그 결과에서 나온 것이다.\n')
 md.append(md_table(pd.DataFrame([
     ['1단계 feature', 'feature 5/10/15/20/38 × 학습 데이터(전체/카메라/오디오)', '트리 100, 깊이 ∞, leaf 1', 15],
     ['2단계 트리', '트리 10/20/50/100 × feature 15/38', '깊이 ∞, leaf 1, 전체 학습', 8],
@@ -143,6 +144,37 @@ md.append(md_table(pd.DataFrame([
     ['seed', '42, 설정당 1회', '반복 없음. 같은 설정(k38 t20)이 2단계 0.9618, 4단계 0.9608로 실행 간 약 0.001 차이.'],
     ['지표', 'F1(macro) 우선', 'Accuracy는 DDoS 95%인 데이터에서 아무것도 안 해도 0.95라 의미가 약함.'],
 ], columns=['변수', '값', '기준']), [('변수', '변수'), ('값', '값'), ('기준', '기준')]))
+
+# ---------------------------------------------------------------- 0-1. one-variable slices
+md.append('\n### 0-1. 한 변수씩만 바꾼 결과 (§2~§4에서 발췌)\n')
+md.append('전체 학습 모델. 각 표는 해당 변수 외 나머지를 고정한 행만 모은 것이며, 원본 행은 괄호 안 절에 있다. '
+          '고정값이 표마다 다르다(feature 실험은 트리 100, 깊이·min_leaf 실험은 트리 20).\n')
+ONE_COLS = [('값', '값'), ('f1m_all', 'F1m 전체'), ('f1m_camera', 'F1m 카메라'), ('f1m_audio', 'F1m 오디오'),
+            ('acc_all', 'Acc 전체'), ('recall_all', 'Recall 전체'), ('infer_us_per_sample', '추론 µs'),
+            ('model_mb', '모델 MB'), ('total_nodes', '노드')]
+ONE_FMT = {'total_nodes': INT, 'infer_us_per_sample': F1D, 'model_mb': F1D}
+
+
+def one_var(d, mask, var, label):
+    s = d[mask & (d.train_subset == 'all')]
+    rows = []
+    for v, g in s.groupby(var, sort=True):
+        g = g.set_index('test_subset')
+        rows.append(dict(값=label(v), f1m_all=g.f1_macro['all'], f1m_camera=g.f1_macro['camera'], f1m_audio=g.f1_macro['audio'],
+                         acc_all=g.accuracy['all'], recall_all=g.recall['all'], infer_us_per_sample=g.infer_us_per_sample['all'],
+                         model_mb=g.model_mb['all'], total_nodes=g.total_nodes['all'], _k=v))
+    return pd.DataFrame(rows).sort_values('_k', key=lambda s: s.replace({0: 999}))
+
+
+md.append('\n**feature 수만** (트리 100, 깊이 ∞, leaf 1 고정 — §2)\n')
+md.append(md_table(one_var(sw_f, sw_f.n_estimators == 100, 'top_k', str), ONE_COLS, ONE_FMT))
+md.append('\n**트리 수만** (feature 38, 깊이 ∞, leaf 1 고정 — §3)\n')
+md.append(md_table(one_var(sw_t, sw_t.top_k == 38, 'n_estimators', str), ONE_COLS, ONE_FMT))
+md.append('\n**깊이만** (feature 38, 트리 20, leaf 1 고정 — §4)\n')
+md.append(md_table(one_var(sw_d, (sw_d.top_k == 38) & (sw_d.min_leaf == 1), 'depth', depth_str), ONE_COLS, ONE_FMT))
+md.append('\n**min_leaf만** (feature 38, 트리 20, 깊이 ∞ 고정 — §4)\n')
+md.append(md_table(one_var(sw_d, (sw_d.top_k == 38) & (sw_d.depth == 0), 'min_leaf', str), ONE_COLS, ONE_FMT))
+md.append('\n같은 네 묶음을 feature 15로 고정한 경우(트리·깊이·min_leaf)도 §3·§4 원본 표에 있다.\n')
 
 # ---------------------------------------------------------------- 1. baseline experiments
 section('1. 기준 실험 (9/25~26): 전체 vs 기기별 학습, LOAO')
