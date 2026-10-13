@@ -23,3 +23,8 @@ __pycache__/
 # ---- OS ----
 Thumbs.db
 .DS_Store
+
+# ---- private notes: kept locally only, not shared with the team ----
+docs/LOG.md
+docs/private/
+CLAUDE.md
