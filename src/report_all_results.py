@@ -215,6 +215,36 @@ md.append(f'\n![기준 실험 F1m]({fig_path("fig1_baseline")})\n')
 # ---------------------------------------------------------------- 2. features
 section('2. 1단계 feature 수 (sweep_features.csv, 45행)')
 md.append('트리 100, 깊이 ∞, leaf 1. 학습 데이터 3종 × feature 5종 = 15개 모델, 각각 전체/카메라/오디오 테스트.\n')
+
+# feature ranking used for top-k selection
+imp = pd.read_csv(TABLES / 'rf_v1_feature_importance.csv', index_col=0)['importance'].sort_values(ascending=False)
+rank = pd.DataFrame({'순위': range(1, len(imp) + 1), 'feature': imp.index, '중요도': imp.values})
+rank['포함 k'] = ['5, 10, 15, 20, 38' if i < 5 else '10, 15, 20, 38' if i < 10 else '15, 20, 38' if i < 15
+                 else '20, 38' if i < 20 else '38' for i in range(len(imp))]
+md.append('**feature 순위.** 기준 모델 `rf_v1`(38 feature, 트리 100)의 Gini 중요도(`rf_v1_feature_importance.csv`). '
+          '상위 k개를 쓰므로 k=15는 1~15위, k=20은 1~20위다. `Number`는 중요도 0(모든 윈도우가 10패킷이라 상수).\n')
+md.append(md_table(rank, [('순위', '순위'), ('feature', 'feature'), ('중요도', '중요도'), ('포함 k', '포함되는 k')],
+                   {'중요도': '{:.4f}', '순위': INT}))
+fig, ax = plt.subplots(figsize=(9, 9))
+ypos = np.arange(len(imp))[::-1]
+ax.barh(ypos, imp.values, height=0.6, color=[C[0] if i < 15 else '#9ec5f4' for i in range(len(imp))])
+ax.set_yticks(ypos, imp.index, fontsize=8.5)
+for y, v in zip(ypos, imp.values):
+    if v >= 0.005:
+        ax.text(v + 0.002, y, f'{v:.3f}', va='center', color=INK2, fontsize=8)
+for k in [5, 10, 15, 20]:
+    ax.axhline(len(imp) - k - 0.5, color=AXIS, linewidth=0.8)
+    ax.text(0.148, len(imp) - k - 0.3, f'k = {k}', color=MUTED, fontsize=8, ha='right')
+style(ax, 'Gini 중요도 (rf_v1, 38 feature)')
+ax.grid(True, axis='x', color=GRID, linewidth=0.8)
+ax.grid(False, axis='y')
+ax.set_xlim(0, 0.16)
+ax.set_title('feature 중요도 순위 — 진한 색 = 상위 15 (C3 후보의 feature)', loc='left', color=INK)
+fig.tight_layout()
+fig.savefig(FIGS / 'fig2_feature_importance.png', dpi=150)
+plt.close(fig)
+md.append(f'\n![feature 중요도]({fig_path("fig2_feature_importance")})\n')
+md.append('**sweep 결과.**\n')
 sw_f['학습'] = sw_f.train_subset.map(SUB_KO)
 sw_f['테스트'] = sw_f.test_subset.map(SUB_KO)
 sw_f = sw_f.sort_values(['top_k', 'train_subset', 'test_subset'],
