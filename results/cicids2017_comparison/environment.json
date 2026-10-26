@@ -1,0 +1,31 @@
+{
+  "python": "3.11.9",
+  "sklearn": "1.9.1",
+  "numpy": "2.4.6",
+  "seed": 42,
+  "final_seeds": [
+    42,
+    43,
+    44
+  ],
+  "loao": {
+    "status": "not_applicable",
+    "positive_attack_labels": [
+      "DDoS"
+    ],
+    "reason": "holding out the only DDoS class leaves no training positives"
+  },
+  "platform": "Windows-10-10.0.26300-SP0",
+  "pandas": "3.0.6",
+  "joblib": "1.6.0",
+  "pyarrow": "25.0.1",
+  "matplotlib": "3.11.2",
+  "source_sha256": {
+    "src\\compare_cicids2017_rf.py": "5262a9389e13ef9c4aecec1c6df485717a22d07a1752104ef0281fcd29772ce9",
+    "src\\prepare_cicids2017_flows.py": "0baa1fb790c02208ee1daf4b4e56749f64e288e9c350bec33bbacf4133c68d76",
+    "src\\finalize_cicids2017_comparison.py": "cf28c4372f7fdd3cf7effde7a759b125d66a81a1ba89cf2afd510fff6ce72b92",
+    "src\\plot_cicids2017_comparison.py": "a43ce4ad738676de56c0f64bafac0807f62734722c64fae9cf10252348c3ba1b",
+    "src\\metrics.py": "3dd7d44e5b965691b06a74f4009c2e09cd562a03453a65992f99a03fa5d40776",
+    "src\\train_rf.py": "3fef0593cb177e28b7e4e0ae13abf67e8e3efc20ef7f5033187687fa84310f8c"
+  }
+}

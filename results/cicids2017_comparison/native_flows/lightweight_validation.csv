@@ -1,0 +1,2 @@
+n,n_benign,n_ddos,accuracy,precision,recall,f1,f1_macro,majority_baseline_acc,tn,fp,fn,tp,train_sec,train_rows,n_features,trees,depth,min_leaf,weight,config_id,seed,columns,n_trees,total_nodes,tree_max_depth,evaluation
+278762,261190,17572,0.9999713016838737,0.9999430718433338,0.9996016389710903,0.9997723262564745,0.9998785059551889,0.9369641486285792,261189,1,7,17565,13.512586600030772,1000000,20,20,0,1,balanced,12e41d688cd1beae,42,"[55, 6, 8, 49, 57, 31, 17, 56, 24, 45, 19, 52, 51, 22, 2, 50, 4, 12, 53, 10]",20,4992,29,validation

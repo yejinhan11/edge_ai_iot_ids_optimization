@@ -1,0 +1,68 @@
+feature,importance_mean,importance_std
+Init_Win_bytes_forward,0.03654423614153379,0.0008785851269801359
+Fwd Packet Length Max,0.0045489690463915156,0.00028656352457384626
+Fwd Packet Length Mean,0.00021163120048794948,7.056691381690516e-05
+Avg Fwd Segment Size,0.00014106428667104431,0.0
+act_data_pkt_fwd,0.00014106428667104431,0.0
+Fwd Header Length,0.00014106428667104431,0.0
+Init_Win_bytes_backward,7.053214333552216e-05,7.053214333552216e-05
+URG Flag Count,7.053214333552216e-05,7.053214333552216e-05
+Fwd IAT Min,7.053214333552216e-05,7.053214333552216e-05
+Flow IAT Min,7.053214333552216e-05,7.053214333552216e-05
+Flow IAT Std,7.053214333552216e-05,7.053214333552216e-05
+Total Fwd Packets,0.0,0.0
+Flow Duration,0.0,0.0
+Protocol,0.0,0.0
+Bwd Packet Length Std,0.0,0.0
+Bwd Packet Length Max,0.0,0.0
+Bwd Packet Length Min,0.0,0.0
+Total Length of Bwd Packets,0.0,0.0
+Total Length of Fwd Packets,0.0,0.0
+Bwd IAT Mean,0.0,0.0
+Flow IAT Max,0.0,0.0
+Flow Packets/s,0.0,0.0
+Fwd IAT Mean,0.0,0.0
+Fwd IAT Std,0.0,0.0
+Fwd IAT Max,0.0,0.0
+Bwd IAT Total,0.0,0.0
+Fwd IAT Total,0.0,0.0
+Fwd PSH Flags,0.0,0.0
+Bwd IAT Std,0.0,0.0
+Bwd IAT Min,0.0,0.0
+Bwd Packet Length Mean,0.0,0.0
+Flow Bytes/s,0.0,0.0
+Fwd Packet Length Min,0.0,0.0
+Fwd Packet Length Std,0.0,0.0
+Total Backward Packets,0.0,0.0
+Avg Bwd Segment Size,0.0,0.0
+Average Packet Size,0.0,0.0
+Bwd Header Length,0.0,0.0
+Bwd Packets/s,0.0,0.0
+Bwd IAT Max,0.0,0.0
+Packet Length Variance,0.0,0.0
+Min Packet Length,0.0,0.0
+Max Packet Length,0.0,0.0
+RST Flag Count,0.0,0.0
+SYN Flag Count,0.0,0.0
+ACK Flag Count,0.0,0.0
+PSH Flag Count,0.0,0.0
+ECE Flag Count,0.0,0.0
+FIN Flag Count,0.0,0.0
+Packet Length Mean,0.0,0.0
+Packet Length Std,0.0,0.0
+Active Mean,0.0,0.0
+Active Std,0.0,0.0
+Down/Up Ratio,0.0,0.0
+Subflow Fwd Packets,0.0,0.0
+Subflow Bwd Bytes,0.0,0.0
+Subflow Bwd Packets,0.0,0.0
+Subflow Fwd Bytes,0.0,0.0
+min_seg_size_forward,0.0,0.0
+Idle Mean,0.0,0.0
+Idle Std,0.0,0.0
+Active Max,0.0,0.0
+Active Min,0.0,0.0
+Idle Max,0.0,0.0
+Idle Min,0.0,0.0
+Fwd Packets/s,-7.049740053255427e-05,7.049740053255427e-05
+Flow IAT Mean,-7.049740053255427e-05,7.049740053255427e-05

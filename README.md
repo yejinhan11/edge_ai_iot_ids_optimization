@@ -15,6 +15,8 @@
 
 [실행 방법·라벨 매칭·분할 정책](docs/CICIDS2017_RF.md) · [실험 결과와 검증](results/cicids2017_ddos_benign/REPORT.md)
 
+추가 비교: [기존 10패킷 방식과 CICIDS2017 공식 flow RF의 특징 선택·경량화 결과](results/cicids2017_comparison/REPORT.md). 기존 방식 33개, 공식 flow 방식 43개 후보를 검증하고, 선택 모델을 seed 3회로 평가했다. 표본 단위가 달라 두 방식의 F1 차이를 특징만의 효과로 단정하지 않는다. [실험 설계와 LOAO 적용 제한](docs/CICIDS2017_COMPARISON.md).
+
 원본 PCAPNG·라벨 ZIP·가공 parquet·모델 바이너리·복구 접두부·실행 로그·가상환경은 업로드하지 않는다. 코드, 설정 JSON, 지표 CSV, 특징 중요도, 감사·검증 기록과 추출 메타데이터를 포함한다. CICIDS2017을 다시 실행하려면 원본 데이터를 별도로 준비해야 한다.
 
 ## 데이터 (data/, git 제외)
