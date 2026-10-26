@@ -57,7 +57,7 @@ class Feature_extraction():
         "Tot sum", "Min", "Max", "AVG", "Std","Tot size", "IAT", "Number", "Variance"]
     
     
-    def pcap_evaluation(self,pcap_file,csv_file_name):
+    def pcap_evaluation(self,pcap_file,csv_file_name,compute_unused_flows=True):
         global ethsize, src_ports, dst_ports, src_ips, dst_ips, ips , tcpflows, udpflows, src_packet_count, dst_packet_count, src_ip_byte, dst_ip_byte
         global protcols_count, tcp_flow_flgs, incoming_packets_src, incoming_packets_dst, packets_per_protocol, average_per_proto_src
         global average_per_proto_dst, average_per_proto_src_port, average_per_proto_dst_port
@@ -319,8 +319,9 @@ class Feature_extraction():
                             udpflows[flow] = [flow_data]
                         packets = udpflows[flow]
                         number_of_packets_per_trabsaction = len(packets)
-                        flow_byte, flow_duration, max_duration, min_duration, sum_duration, average_duration, std_duration, idle_time,active_time = get_flow_info(udpflows,flow)
-                        src_to_dst_pkt, dst_to_src_pkt, src_to_dst_byte, dst_to_src_byte = get_src_dst_packets(udpflows, flow)
+                        if compute_unused_flows:
+                            flow_byte, flow_duration, max_duration, min_duration, sum_duration, average_duration, std_duration, idle_time,active_time = get_flow_info(udpflows,flow)
+                            src_to_dst_pkt, dst_to_src_pkt, src_to_dst_byte, dst_to_src_byte = get_src_dst_packets(udpflows, flow)
                     # Features related to TCP
                     elif type(potential_packet) == dpkt.tcp.TCP:
                         src_port = con_basic.get_source_port()
@@ -380,9 +381,10 @@ class Feature_extraction():
                         packets = tcpflows[flow]
                         #Get the number of packets in that specific flow 
                         number_of_packets_per_trabsaction = len(packets)
-                        flow_byte, flow_duration,max_duration,min_duration,sum_duration,average_duration,std_duration,idle_time,active_time = get_flow_info(tcpflows,flow)
+                        if compute_unused_flows:
+                            flow_byte, flow_duration,max_duration,min_duration,sum_duration,average_duration,std_duration,idle_time,active_time = get_flow_info(tcpflows,flow)
                         #Calculates the no of packets for each flow vice -versa, and the total no. of bytes 
-                        src_to_dst_pkt, dst_to_src_pkt, src_to_dst_byte, dst_to_src_byte = get_src_dst_packets(tcpflows, flow)
+                            src_to_dst_pkt, dst_to_src_pkt, src_to_dst_byte, dst_to_src_byte = get_src_dst_packets(tcpflows, flow)
 
                     # calculate_incoming_connections(incoming_packets_src, incoming_packets_dst, src_port, dst_port, src_ip, dst_ip)
                     if flow_duration != 0:
@@ -503,6 +505,7 @@ class Feature_extraction():
                 count_rows+=1
                 
  
+        f.close()
         processed_df = pd.DataFrame(base_row)
         metadata_df = pd.DataFrame(packet_metadata)
         if len(processed_df) != len(metadata_df):

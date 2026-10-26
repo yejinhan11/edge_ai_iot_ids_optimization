@@ -1,0 +1,27 @@
+{
+  "checkpoint": {
+    "pcap": "Tuesday-WorkingHours.pcap",
+    "fraction": 0.8034940353605738,
+    "elapsed_sec": 1180.924732685089,
+    "eta_sec": 288.81204284074346,
+    "counts": {
+      "packets_read": 7974519,
+      "packet_matched": 7902949,
+      "packet_unsupported": 17151,
+      "packet_fragment": 204,
+      "packet_unmatched": 121,
+      "window_retained": 762869,
+      "window_incomplete": 19197,
+      "drop_iat": 0,
+      "rows_written": 762869,
+      "retained_BENIGN": 762869,
+      "window_excluded_attack": 13934,
+      "packet_ambiguous": 39575
+    },
+    "updated": 1792983891.3204784
+  },
+  "raw_byte_offset": 8877229980,
+  "accepted_packets": 7960000,
+  "validated_prefix_rows": 762869,
+  "original_preparer_sha256": "b7d93e5ac37ae8f2a3705a8cc55edfdc6c0bd2551f3d53e317ebd468934a8846"
+}

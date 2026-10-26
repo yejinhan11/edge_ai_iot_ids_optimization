@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "pcap": "Friday-WorkingHours.pcap",
+      "packets": 2000,
+      "windows": 200,
+      "exact_equal": true,
+      "legacy_sec": 0.37632429995574057,
+      "optimized_sec": 0.15151720005087554
+    },
+    {
+      "pcap": "Monday-WorkingHours.pcap",
+      "packets": 2000,
+      "windows": 200,
+      "exact_equal": true,
+      "legacy_sec": 0.3327828000765294,
+      "optimized_sec": 0.13910779997240752
+    },
+    {
+      "pcap": "Thursday-WorkingHours.pcap",
+      "packets": 2000,
+      "windows": 200,
+      "exact_equal": true,
+      "legacy_sec": 0.3265840000240132,
+      "optimized_sec": 0.144362400053069
+    },
+    {
+      "pcap": "Tuesday-WorkingHours.pcap",
+      "packets": 2000,
+      "windows": 200,
+      "exact_equal": true,
+      "legacy_sec": 0.37655350007116795,
+      "optimized_sec": 0.13814229995477945
+    },
+    {
+      "pcap": "Wednesday-workingHours.pcap",
+      "packets": 2000,
+      "windows": 200,
+      "exact_equal": true,
+      "legacy_sec": 0.375008299946785,
+      "optimized_sec": 0.13478880003094673
+    }
+  ],
+  "extractor_sha256": "e4ce63a2e9c244fb79b32b166f45c4ca52f89c0403b3ce7e8bfa8cd576d87150"
+}
