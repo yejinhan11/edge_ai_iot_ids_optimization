@@ -117,3 +117,7 @@ notebooks/             Colab 노트북 아카이브 (실행 결과 포함)
 results/tables/        결과 CSV,  results/models/ 학습 모델(git 제외)
 docs/references/       논문 PDF
 ```
+
+## CICIoT2023 RF 클래스 균형 추가 검증
+
+[실험 방법·상세 결과·그래프](results/ciciot2023_balanced_rf/REPORT.md): 동일 학습량 100만 행에서 기존 비율과 정상/DDoS 50:50을 비교한 18개 모델 결과입니다. 기존 결과를 보존하며, 정상 오탐·DDoS 미탐과 경량화 비용을 함께 정리했습니다.

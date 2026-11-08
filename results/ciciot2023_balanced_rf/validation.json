@@ -1,0 +1,14 @@
+{
+  "rows": 18,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "all_test_counts_identical": true,
+  "archive_reproduction_exact_for_all_three_seed42_controls": true,
+  "all_models_reloaded": true,
+  "all_models_confusion_counts_consistent": true,
+  "model_selection": "none; all candidates prespecified",
+  "test_sha256": "dc21b234fd46fab7135b1ef14197f3394bc01b18de1b92088b39f4d3e46c86fb"
+}
