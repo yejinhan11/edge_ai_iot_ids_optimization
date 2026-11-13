@@ -3,7 +3,17 @@
 전자공학종합설계 프로젝트. CICIoT2023 PCAP에서 공식 39-feature를 추출해 Random Forest로 DDoS를 탐지하고,
 **전체 / Camera / 트래픽 최다 기기(Echo Dot 1) / AMCREST 카메라** subset 간 정확도·F1·추론속도·모델 크기·메모리를 비교한다.
 
-## 최신 진행 보고: RF 추가 경량화 (2026-11-13)
+## Edge-IIoTset PCAP RF 기준선
+
+정상 PCAP 10개와 DDoS HTTP·ICMP·TCP SYN·UDP 4개를 기존 38특징·비중첩 10패킷 방식으로 처리했다. 확보한 파일 전체에서 1,935,894개 윈도우를 구성하고, 파일별 앞 70% 학습 풀·뒤 30% 테스트에서 100트리 RF를 seed 42/43/44로 평가했다. 평균 Accuracy 99.9888%, Macro F1 0.999886, 비압축 모델 8.464 MB다. 경량화·MLP 실험과는 별도 기준선이다.
+
+[실행·팀원 MLP 공유 방법](docs/EDGE_IIOTSET_RF.md) · [RF 결과·파일별 오류·중복 감사](results/edge_iiotset_rf/REPORT.md)
+
+**팀원에게 보내기:** [Edge-IIoTset MLP 시작 안내서](docs/EDGE_IIOTSET_MLP_GUIDE.md). 공통 특징표와 인덱스는 별도 `edge_iiotset_mlp_handoff.zip`으로 전달하며, 저장소 clone만으로 데이터가 제공되지는 않는다. 공유 ZIP 생성: `python src/package_edge_iiotset_mlp.py`.
+
+라벨은 원 논문의 정상/공격별 파일 구성에 근거한 수집 시나리오 라벨이다. 개별 패킷의 악성 여부를 독립적으로 확인한 정답은 아니며, 같은 캡처 안의 평가를 새 환경 일반화로 해석하지 않는다. 특징표·모델·공통 분할은 `data/processed/edge_iiotset/`에 저장하고 Git에서 제외한다.
+
+## RF 추가 경량화 진행 보고 (2026-11-13)
 
 - [진행 전체 목차·완료/예정 구분](docs/EXPERIMENT_INDEX.md)
 - [목표 설정 이유·설계·결과·한계·발표 질의응답](results/ciciot2023_rf_further/REPORT.md)

@@ -1,0 +1,104 @@
+{
+  "dataset": "Edge-IIoTset PCAP-derived 38-feature capture/scenario baseline",
+  "rows": 1935894,
+  "features": 38,
+  "labels": {
+    "0": "Normal capture",
+    "1": "DDoS capture"
+  },
+  "files": [
+    {
+      "name": "MLP_HANDOFF.json",
+      "bytes": 1850,
+      "sha256": "b06d18f9b4505c9f00c3a99bd93421867a4817f31c555f4bd06525bf54faf42a"
+    },
+    {
+      "name": "sample_manifest.parquet",
+      "bytes": 14600576,
+      "sha256": "b6181b935dcc4be9d9fd29572a9c6005e9e655b6faae5f0d91fd8becf5f0b8e8"
+    },
+    {
+      "name": "fit_indices.npy",
+      "bytes": 8673000,
+      "sha256": "888cc2f03e75918aa1c984e4f104875697f532c69b067f13b87b84e93aae05e9"
+    },
+    {
+      "name": "rf_fit_seed42.npy",
+      "bytes": 6399736,
+      "sha256": "7188dae8727f4e8ad62c6e576f2ec2f402a12ad4b9e2dc58ee3a76931f5b4a2c"
+    },
+    {
+      "name": "rf_fit_seed43.npy",
+      "bytes": 6398224,
+      "sha256": "bd127c4a1b3ce6a018909ba5ca687fbc9eb350eca59516ea6558abc08fb7d675"
+    },
+    {
+      "name": "rf_fit_seed44.npy",
+      "bytes": 6400232,
+      "sha256": "2cfb451c7cdaf219c9a5ab71656fba718822994bee9f114765a56d95ab52166d"
+    },
+    {
+      "name": "rf_train_seed42.npy",
+      "bytes": 8000128,
+      "sha256": "dd418dfa55059396bcdb442fb752661d425af7bf2efb1a5ac9e13d07c0cb675a"
+    },
+    {
+      "name": "rf_train_seed43.npy",
+      "bytes": 8000128,
+      "sha256": "b3eb31c7aab5c14f9675da4aaa7190fc8bf3a4df8d6b3bd34442cefd17407d9b"
+    },
+    {
+      "name": "rf_train_seed44.npy",
+      "bytes": 8000128,
+      "sha256": "9464b268c7de1113fabf664f27c478ec1598bf83bfe6f18f5c81d2f2bda306dd"
+    },
+    {
+      "name": "rf_validation_seed42.npy",
+      "bytes": 1600520,
+      "sha256": "080b31b4d193c4066ee2a3d18cfccaab6feb44380a3f2928d390fded164a0cc1"
+    },
+    {
+      "name": "rf_validation_seed43.npy",
+      "bytes": 1602032,
+      "sha256": "13b08a21f2766ec792914811fff26f71e15c434f06fb4481bd84dc08b95efa6b"
+    },
+    {
+      "name": "rf_validation_seed44.npy",
+      "bytes": 1600024,
+      "sha256": "cbd9afa23c7c0e8f9f73916c15875ead538e192d6fd4677b92c53fdfb724e969"
+    },
+    {
+      "name": "test_indices.npy",
+      "bytes": 4646216,
+      "sha256": "2a78f6fc9f3141c97922c97faec7af7958ac9b4131d0522ad89f7b772b1739ed"
+    },
+    {
+      "name": "train_indices.npy",
+      "bytes": 10841192,
+      "sha256": "cf70bb7d257f78e348109a60f381bd05c82a2fa93cadb5af92576a9575817df6"
+    },
+    {
+      "name": "validation_indices.npy",
+      "bytes": 2168320,
+      "sha256": "7df8adfd04006a61a1ebae6c9fe1b42eb580b93fc95dc72629a89c019f1c7260"
+    },
+    {
+      "name": "X.float32.npy",
+      "bytes": 294256016,
+      "sha256": "eb108c29832ea31e197757f6cc721acf907d7984a505d53134d27a952a18b5c0"
+    },
+    {
+      "name": "y.int8.npy",
+      "bytes": 1936022,
+      "sha256": "d43001d0f7bb368d85c9b82600db7580b9ccecc9f818b88efd422e7e5c0c620e"
+    }
+  ],
+  "guide_sha256": "0726aadf7b996ab4f9abe7fd117caec9b12e761a95036d763c00ccd70fd2f435",
+  "extract": "copy edge_iiotset/ into data/processed/edge_iiotset/ in a clone of the repository",
+  "excluded": [
+    "PCAPs",
+    "RF joblib models",
+    "extraction cache",
+    "raw feature parts"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source": "Water_Level.pcap",
+  "input": {
+    "bytes": 172482137,
+    "sha256": "1b76b1881bde98a15d311da6f9be2ac2fdeeee97d60e99e044e097afae6c2b4e"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "Normal",
+  "binary_label": 0,
+  "rows_out": 230230,
+  "packets_read": 2302497,
+  "packets_accepted": 2302302,
+  "chunks": 116,
+  "accepted_packet_tail": 2,
+  "timestamp_backwards": 0,
+  "rows_in": 230231,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

@@ -1,0 +1,21 @@
+{
+  "source": "Temperature_and_Humidity.pcap",
+  "input": {
+    "bytes": 345868816,
+    "sha256": "2b37027b1575f1d5bba7ab6cf87503df303ea2c9ab07a69b20f8d0f28696da6f"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "Normal",
+  "binary_label": 0,
+  "rows_out": 135258,
+  "packets_read": 1629749,
+  "packets_accepted": 1352593,
+  "chunks": 68,
+  "accepted_packet_tail": 3,
+  "timestamp_backwards": 0,
+  "rows_in": 135260,
+  "drop_short": 1,
+  "drop_iat": 1,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

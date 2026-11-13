@@ -1,0 +1,88 @@
+{
+  "probes": [
+    {
+      "source": "Distance.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Flame_Sensor.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Heart_Rate.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "IR_Receiver.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Modbus.pcap",
+      "probe_packets": 2000,
+      "windows": 198,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Soil_Moisture.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Sound_Sensor.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Temperature_and_Humidity.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "Water_Level.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "phValue.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "DDoS HTTP Flood Attacks.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "DDoS ICMP Flood Attacks.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "DDoS TCP SYN Flood Attacks.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    },
+    {
+      "source": "DDoS UDP Flood Attacks.pcap",
+      "probe_packets": 2000,
+      "windows": 200,
+      "exact_original_backend_match": true
+    }
+  ]
+}

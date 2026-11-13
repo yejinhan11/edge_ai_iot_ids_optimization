@@ -1,0 +1,21 @@
+{
+  "source": "DDoS UDP Flood Attacks.pcap",
+  "input": {
+    "bytes": 247560012,
+    "sha256": "6de0341f27093cac8a5eba657b8a49ecbac4dd5bf6c452a6274472df69172ce5"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "DDoS_UDP",
+  "binary_label": 1,
+  "rows_out": 321571,
+  "packets_read": 3215732,
+  "packets_accepted": 3215718,
+  "chunks": 161,
+  "accepted_packet_tail": 8,
+  "timestamp_backwards": 0,
+  "rows_in": 321572,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

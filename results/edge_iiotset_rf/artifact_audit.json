@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "baseline_seeds": [
+    42,
+    43,
+    44
+  ],
+  "backend_equivalence_files": 14,
+  "reference_sklearn_weighted_confusion_metrics_match": true,
+  "per_source_confusion_totals_match": true,
+  "shared_array_shape": [
+    1935894,
+    38
+  ],
+  "final_train_sample_rows_per_seed": 1000000,
+  "shared_train_test_disjoint": true,
+  "sample_inner_fit_validation_disjoint": true,
+  "report_relative_links_valid": true,
+  "boundary_tests_passed": 2,
+  "model_reload_checks": "prediction equivalence checked during training",
+  "result_hashes": {
+    "runs.csv": "a8606e6f74e3f17b41aa5d3b7ff85b1095d0747b5734cd10b577543b1a47251a",
+    "protocol.json": "d832182230881f3bb0a665150fc2d4e41d48239e47162d8733587eaf24a8e3e4",
+    "partition_audit.csv": "9ea637f675800339c27b95df501310ae382bdf6b526ff3daa2639b5ddf17eb27"
+  },
+  "saved_model_sha256": {
+    "rf_baseline_seed42.joblib": "e8055862927501393245a56fdbfc731c9d5d11581a55df9761b9a4360650b00a",
+    "rf_baseline_seed43.joblib": "e599d5cfd3b1aaf5b5f4405ec6243ecd7ab6e6e03ac482b65cdfbb84965ed3b9",
+    "rf_baseline_seed44.joblib": "bdae2c31223248f53dbefae68cde490fdc4614438c60842f26425b7d0f104357"
+  }
+}

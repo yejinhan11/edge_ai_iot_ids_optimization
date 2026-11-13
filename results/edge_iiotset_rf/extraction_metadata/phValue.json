@@ -1,0 +1,21 @@
+{
+  "source": "phValue.pcap",
+  "input": {
+    "bytes": 56548929,
+    "sha256": "7676af0ae72776ae54fb128adcb55959bbe95729d10313e30b74d96f8c9010f6"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "Normal",
+  "binary_label": 0,
+  "rows_out": 75940,
+  "packets_read": 759665,
+  "packets_accepted": 759405,
+  "chunks": 38,
+  "accepted_packet_tail": 5,
+  "timestamp_backwards": 0,
+  "rows_in": 75941,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

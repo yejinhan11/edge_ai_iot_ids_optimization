@@ -1,0 +1,15 @@
+source_pcap,seed,rows,binary_label,error_rate,tn,fp,fn,tp
+DDoS HTTP Flood Attacks.pcap,42,6873,1,0.00029099374363451185,0,0,2,6871
+DDoS ICMP Flood Attacks.pcap,42,87430,1,0.0,0,0,0,87430
+DDoS TCP SYN Flood Attacks.pcap,42,60603,1,0.0,0,0,0,60603
+DDoS UDP Flood Attacks.pcap,42,96471,1,0.0,0,0,0,96471
+Distance.pcap,42,34314,0,0.0,34314,0,0,0
+Flame_Sensor.pcap,42,32112,0,0.0,32112,0,0,0
+Heart_Rate.pcap,42,5109,0,0.0,5109,0,0,0
+IR_Receiver.pcap,42,39243,0,0.0,39243,0,0,0
+Modbus.pcap,42,4776,0,0.01675041876046901,4696,80,0,0
+Soil_Moisture.pcap,42,36007,0,0.0,36007,0,0,0
+Sound_Sensor.pcap,42,45396,0,0.0,45396,0,0,0
+Temperature_and_Humidity.pcap,42,40576,0,4.929022082018927e-05,40574,2,0,0
+Water_Level.pcap,42,69069,0,0.0,69069,0,0,0
+phValue.pcap,42,22782,0,0.0,22782,0,0,0

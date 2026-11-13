@@ -1,0 +1,21 @@
+{
+  "source": "Distance.pcap",
+  "input": {
+    "bytes": 85424784,
+    "sha256": "6b16348f1139dcb83c12e6855e7202f7ae5b77bbca8eed467ab0b6aa3ab78922"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "Normal",
+  "binary_label": 0,
+  "rows_out": 114381,
+  "packets_read": 1143948,
+  "packets_accepted": 1143814,
+  "chunks": 58,
+  "accepted_packet_tail": 4,
+  "timestamp_backwards": 0,
+  "rows_in": 114382,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

@@ -1,0 +1,81 @@
+{
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "X": "X.float32.npy",
+  "y": "y.int8.npy",
+  "partitions": {
+    "train": "train_indices.npy",
+    "test": "test_indices.npy",
+    "fit": "fit_indices.npy",
+    "validation": "validation_indices.npy"
+  },
+  "rf_training_indices": {
+    "42": "rf_train_seed42.npy",
+    "43": "rf_train_seed43.npy",
+    "44": "rf_train_seed44.npy"
+  },
+  "rf_sample_inner_indices": {
+    "42": {
+      "fit": "rf_fit_seed42.npy",
+      "validation": "rf_validation_seed42.npy"
+    },
+    "43": {
+      "fit": "rf_fit_seed43.npy",
+      "validation": "rf_validation_seed43.npy"
+    },
+    "44": {
+      "fit": "rf_fit_seed44.npy",
+      "validation": "rf_validation_seed44.npy"
+    }
+  },
+  "labels": {
+    "0": "Normal capture",
+    "1": "DDoS capture"
+  },
+  "rules": [
+    "use exactly the same test indices",
+    "fit scalers/imputation on training only",
+    "for equal sample budgets use rf_train_seed42.npy",
+    "fit/validation exported for training decisions; a model fitted on fit only has a different budget from final RF training",
+    "use this feature order; never include metadata or labels as model input"
+  ],
+  "protocol": "results/edge_iiotset_rf/protocol.json"
+}

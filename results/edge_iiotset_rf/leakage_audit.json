@@ -1,0 +1,13 @@
+{
+  "identifiers_excluded": true,
+  "numeric_feature_count": 38,
+  "method": "pandas uint64 hashes of all 38 float32 features; collisions theoretically possible",
+  "train_test_rows_disjoint": true,
+  "train_test_exact_feature_overlap_rows": 174924,
+  "test_rows": 580761,
+  "fraction_test_seen_in_full_training_pool": 0.30119791101675214,
+  "cross_label_feature_groups": 0,
+  "rows_in_cross_label_groups": 0,
+  "connection_purge": false,
+  "split": "capture-order within each file, not independent capture holdout"
+}

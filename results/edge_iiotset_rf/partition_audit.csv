@@ -1,0 +1,29 @@
+source_pcap,attack_type,binary_label,partition,rows
+DDoS HTTP Flood Attacks.pcap,DDoS_HTTP,1,test,6873
+DDoS HTTP Flood Attacks.pcap,DDoS_HTTP,1,train,16039
+DDoS ICMP Flood Attacks.pcap,DDoS_ICMP,1,test,87430
+DDoS ICMP Flood Attacks.pcap,DDoS_ICMP,1,train,204004
+DDoS TCP SYN Flood Attacks.pcap,DDoS_TCP_SYN,1,test,60603
+DDoS TCP SYN Flood Attacks.pcap,DDoS_TCP_SYN,1,train,141410
+DDoS UDP Flood Attacks.pcap,DDoS_UDP,1,test,96471
+DDoS UDP Flood Attacks.pcap,DDoS_UDP,1,train,225100
+Distance.pcap,Normal,0,test,34314
+Distance.pcap,Normal,0,train,80067
+Flame_Sensor.pcap,Normal,0,test,32112
+Flame_Sensor.pcap,Normal,0,train,74930
+Heart_Rate.pcap,Normal,0,test,5109
+Heart_Rate.pcap,Normal,0,train,11924
+IR_Receiver.pcap,Normal,0,test,39243
+IR_Receiver.pcap,Normal,0,train,91570
+Modbus.pcap,Normal,0,test,4776
+Modbus.pcap,Normal,0,train,11145
+Soil_Moisture.pcap,Normal,0,test,36007
+Soil_Moisture.pcap,Normal,0,train,84019
+Sound_Sensor.pcap,Normal,0,test,45396
+Sound_Sensor.pcap,Normal,0,train,105924
+Temperature_and_Humidity.pcap,Normal,0,test,40576
+Temperature_and_Humidity.pcap,Normal,0,train,94682
+Water_Level.pcap,Normal,0,test,69069
+Water_Level.pcap,Normal,0,train,161161
+phValue.pcap,Normal,0,test,22782
+phValue.pcap,Normal,0,train,53158

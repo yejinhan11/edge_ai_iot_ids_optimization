@@ -1,0 +1,119 @@
+{
+  "dataset": "Edge-IIoTset PCAP-derived normal versus DDoS capture/scenario baseline",
+  "label_scope": "normal versus DDoS capture/scenario; mixed benign packets in attack captures not separately resolved",
+  "source": "https://doi.org/10.1109/ACCESS.2022.3165809",
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "code_hash": "cab6d0b5e8416ffc52728b417acfa6ccb2f041c1c706674ddc8a1c931f588fc6",
+  "preparation_code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "source_parquet_sha256": {
+    "DDoS_HTTP_Flood_Attacks.parquet": "669422cb1c48e231ad37083d2ed345a42fb0943df80b69e89811698637f0c228",
+    "DDoS_ICMP_Flood_Attacks.parquet": "53840cb1cd56cd5c2eed7efeb6eb4e36988bdbd3fbcc92ded56982767eec4378",
+    "DDoS_TCP_SYN_Flood_Attacks.parquet": "845de2a02a3fd3f6f3a630fe0b182f084ab934efac1445f8eb79cda16db03c12",
+    "DDoS_UDP_Flood_Attacks.parquet": "ca2dc7926402de3abb82bba0965ea7de387e4ff890ec73e3ae2b1f88768eba3e",
+    "Distance.parquet": "8f2e4c08b27b78fcbd544f9c2f4d40f00aa01fb12b8ecf702de69d382108700e",
+    "Flame_Sensor.parquet": "014553839eda74de365f282ca73a4ce19add4afc2e83e2ab05970faf66bede80",
+    "Heart_Rate.parquet": "d6800f697ea177028f352ecd936e8d7a0c684f7a526005f1a6ddf172f48c9792",
+    "IR_Receiver.parquet": "24895434c7e2d4ff57a552a026d301e48c3935fc4cb441c294316e25d063b3d8",
+    "Modbus.parquet": "f461d2a8bc32a17276931337eb3cd0b4889e44392e458aa399533181af42ff71",
+    "phValue.parquet": "54feb741eee2cc010cc4f3886793bf2ae1a84d7651ee2fe55e86ed84f43d99ba",
+    "Soil_Moisture.parquet": "9b040f3a950484d51b0dffdcf9998b97fee1af441579f1e2810277e382ff2f43",
+    "Sound_Sensor.parquet": "e63ef1819b68982cfee4588473e29c8bb56a4d77ec855879896523e3c04e58cc",
+    "Temperature_and_Humidity.parquet": "280b4dbd59ef1e83b380e19a9e30bf44c69b54bda956827ea5d3690c6e842dba",
+    "Water_Level.parquet": "1caecddc159d1625f9c4222b1e9b37369f936875c32aee4aee9e7bc518c2f802"
+  },
+  "settings": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "class_weight": "balanced",
+    "training_cap": 1000000
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "split": "per source_pcap first 70% row_in_file -> training pool, last 30% -> test; no shuffle before partition",
+  "inner_split": "first 56% fit and next 14% validation exported for teammate; fixed RF uses first 70% and does not tune on validation/test",
+  "partitions": {
+    "train_pool": {
+      "rows": 1355133,
+      "normal": 768580,
+      "ddos_scenario": 586553,
+      "sha256": "aa59d07c40310d7ca09897ac144e8498325f1443a91dc7f32a3c1212161ca34a"
+    },
+    "test": {
+      "rows": 580761,
+      "normal": 329384,
+      "ddos_scenario": 251377,
+      "sha256": "7b3cc7e9957f9ae146811b2e63b189b4a20c63f62eb20746fc2c8ad5190ac140"
+    },
+    "fit": {
+      "rows": 1084109,
+      "normal": 614866,
+      "ddos_scenario": 469243,
+      "sha256": "3bcbf780d01d98ec48d1b5736a09f1c22754afd66bd3807e5f63a84f4f63bfef"
+    },
+    "validation": {
+      "rows": 271024,
+      "normal": 153714,
+      "ddos_scenario": 117310,
+      "sha256": "fbf10ad7439b021eec533128f7dc9cb31377a86fbb3d628d904b08effc22631f"
+    }
+  },
+  "inference": "single CPU thread RF.predict on fixed at most 100000 test rows, 5-repeat median after warmup; feature extraction excluded",
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "limitations": [
+    "capture labels do not independently establish every packet is malicious",
+    "same-capture split; overlapping connections and identical feature vectors may cross train/test",
+    "not a fresh-capture, unseen-attack, device-independent or cross-dataset transfer evaluation",
+    "not an official Edge-IIoTset CSV reproduction; uses established CICIoT2023 38-feature extraction",
+    "entire supplied 14 PCAPs scanned, not all 14 attack types in Edge-IIoTset",
+    "historical CICIoT2023 experiments used first-chunk PCAP subsets; this dataset uses entire supplied files"
+  ]
+}

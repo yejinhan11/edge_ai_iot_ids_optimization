@@ -1,0 +1,21 @@
+{
+  "source": "Sound_Sensor.pcap",
+  "input": {
+    "bytes": 112118593,
+    "sha256": "8e33158f8fa935e48852ba4a1a5c760588aacecbf1427cf7a3b6ec90b0ebc276"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "Normal",
+  "binary_label": 0,
+  "rows_out": 151320,
+  "packets_read": 1513318,
+  "packets_accepted": 1513201,
+  "chunks": 76,
+  "accepted_packet_tail": 1,
+  "timestamp_backwards": 0,
+  "rows_in": 151321,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}

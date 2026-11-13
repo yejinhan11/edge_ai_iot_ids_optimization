@@ -1,0 +1,21 @@
+{
+  "source": "DDoS HTTP Flood Attacks.pcap",
+  "input": {
+    "bytes": 28307602,
+    "sha256": "2fb2558d51defd1704a54a7a76df787048e9281d2efd8177703d66a7f78620ba"
+  },
+  "code_hash": "0bec0c1e8306c6739df751b3dbe8de10d87a7192da751a38c9bbe82574e42ea3",
+  "scenario_label": "DDoS_HTTP",
+  "binary_label": 1,
+  "rows_out": 22912,
+  "packets_read": 229142,
+  "packets_accepted": 229125,
+  "chunks": 12,
+  "accepted_packet_tail": 5,
+  "timestamp_backwards": 1,
+  "rows_in": 22913,
+  "drop_short": 1,
+  "drop_iat": 0,
+  "rate_capped": 0,
+  "label_scope": "capture/scenario label; not independently matched per-packet ground truth"
+}
