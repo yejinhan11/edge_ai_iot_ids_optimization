@@ -1,0 +1,82 @@
+{
+  "selected": {
+    "candidate": "t10_d20_l1",
+    "trees": 10,
+    "depth": 20,
+    "leaf": 1
+  },
+  "finalists": [
+    {
+      "candidate": "t10_d20_l1",
+      "trees": 10,
+      "depth": 20,
+      "leaf": 1
+    },
+    {
+      "candidate": "t10_d24_l1",
+      "trees": 10,
+      "depth": 24,
+      "leaf": 1
+    },
+    {
+      "candidate": "t20_d20_l1",
+      "trees": 20,
+      "depth": 20,
+      "leaf": 1
+    }
+  ],
+  "valid_names": [
+    "t10_d20_l1",
+    "t10_d24_l1",
+    "t20_d20_l1"
+  ],
+  "per_seed_checks": [
+    {
+      "candidate": "t10_d20_l1",
+      "seed": 42,
+      "passes": true
+    },
+    {
+      "candidate": "t10_d24_l1",
+      "seed": 42,
+      "passes": true
+    },
+    {
+      "candidate": "t20_d20_l1",
+      "seed": 42,
+      "passes": true
+    },
+    {
+      "candidate": "t10_d20_l1",
+      "seed": 43,
+      "passes": true
+    },
+    {
+      "candidate": "t10_d24_l1",
+      "seed": 43,
+      "passes": true
+    },
+    {
+      "candidate": "t20_d20_l1",
+      "seed": 43,
+      "passes": true
+    },
+    {
+      "candidate": "t10_d20_l1",
+      "seed": 44,
+      "passes": true
+    },
+    {
+      "candidate": "t10_d24_l1",
+      "seed": 44,
+      "passes": true
+    },
+    {
+      "candidate": "t20_d20_l1",
+      "seed": 44,
+      "passes": true
+    }
+  ],
+  "fallback_to_c1": false,
+  "frozen_before_test": true
+}

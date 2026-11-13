@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-26T03:19:26.590532+00:00",
+  "status": "complete",
+  "first_started_utc": "2026-10-26T02:19:50.336096+00:00",
+  "allowed_labels": [
+    "BENIGN",
+    "DDoS"
+  ],
+  "data_dir": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\data\\processed\\cicids2017_ddos_benign",
+  "stage": "complete",
+  "updated_utc": "2026-10-26T03:27:23.063167+00:00",
+  "current_pcaps": [],
+  "workers": 3,
+  "current_pcap": null,
+  "time_group": "source-label",
+  "elapsed_sec": 476.4726347923279,
+  "wall_elapsed_sec": 4052.727071285248
+}

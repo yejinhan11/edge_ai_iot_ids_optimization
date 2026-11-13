@@ -1,0 +1,17 @@
+{
+  "model_load_verified": true,
+  "n_features": 38,
+  "n_estimators": 100,
+  "classes": [
+    0,
+    1
+  ],
+  "total_rows": 5065637,
+  "benign_rows": 5032072,
+  "ddos_rows": 33565,
+  "test_rows": 1519689,
+  "recovered_prefix_rows": 762869,
+  "recovered_prefix_exact_equal": true,
+  "confusion_matrix_consistent": true,
+  "recovery_prefix_artifact": "recovery/Tuesday-prefix.parquet"
+}

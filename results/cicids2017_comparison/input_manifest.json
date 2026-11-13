@@ -1,0 +1,37 @@
+[
+  {
+    "path": "data\\processed\\cicids2017_native_flows\\flows.parquet",
+    "bytes": 236604274,
+    "sha256": "718b4a9eceb35dfa87694f34058cda6517067d40c1192c256483d67db82153c5"
+  },
+  {
+    "path": "data\\raw\\cicids2017\\labels\\GeneratedLabelledFlows.zip",
+    "bytes": 283876488,
+    "sha256": "7bdbef286f8893f31c6db12105fa097fa5c2dcc6733179037a08129d150ea27a"
+  },
+  {
+    "path": "data\\processed\\cicids2017_ddos_benign\\Friday-WorkingHours.parquet",
+    "bytes": 47291287,
+    "sha256": "c41e4c52957fbb07cd87dab0d120a511df2cccb3f8264274e976c22226feac4a"
+  },
+  {
+    "path": "data\\processed\\cicids2017_ddos_benign\\Monday-WorkingHours.parquet",
+    "bytes": 62904723,
+    "sha256": "b1a9534166106e2afe10b944faec1267777d6fd9fac13f258586c36daca7b9bb"
+  },
+  {
+    "path": "data\\processed\\cicids2017_ddos_benign\\Thursday-WorkingHours.parquet",
+    "bytes": 48769932,
+    "sha256": "3d9c046da64f0778ffa5c619eadc293ffd75c01cf4913e65674d6cad5b87b3b6"
+  },
+  {
+    "path": "data\\processed\\cicids2017_ddos_benign\\Tuesday-WorkingHours.parquet",
+    "bytes": 52184793,
+    "sha256": "d8bde082d228f161c0e590f86ae19514bb3e526521b301077e7ec0bdbf5582e0"
+  },
+  {
+    "path": "data\\processed\\cicids2017_ddos_benign\\Wednesday-workingHours.parquet",
+    "bytes": 57836128,
+    "sha256": "f81ae2e97b4215aea38970041b6a52df07a6abf2f1ef709ee1d329a2bd4cad33"
+  }
+]

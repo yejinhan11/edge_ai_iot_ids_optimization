@@ -32,8 +32,13 @@ SUBSETS = {'all': None, 'camera': 'has_camera', 'audio': 'has_audio', 'echo_dot1
            'amcrest': 'has_amcrest'}
 
 
-def time_split(data, train_frac):
+def time_split(data, train_frac, group_label=False):
     """is_train = row within the first `train_frac` of its source file (row_in_file order)."""
+    if group_label:
+        grouped = data.groupby(['source_pcap', 'binary_label'], observed=True)
+        rank = grouped['row_in_file'].rank(method='first') - 1
+        size = grouped['row_in_file'].transform('size')
+        return (rank < size * train_frac).to_numpy()
     n_in_file = data.groupby('source_pcap', observed=True)['row_in_file'].transform('max') + 1
     return (data['row_in_file'] < n_in_file * train_frac).to_numpy()
 
@@ -45,6 +50,8 @@ def main():
     ap.add_argument('--split', choices=['time', 'loao'], default='time')
     ap.add_argument('--holdout', default=None, help='attack_type held out for --split loao')
     ap.add_argument('--train-frac', type=float, default=0.7)
+    ap.add_argument('--time-group', choices=['source', 'source-label'], default='source',
+                    help='source-label: chronological 70/30 within each file and label; no common time cutoff')
     ap.add_argument('--train-subset', choices=list(SUBSETS), default='all')
     ap.add_argument('--max-train', type=int, default=1_000_000, help='random cap on training rows')
     ap.add_argument('--n-estimators', type=int, default=100)
@@ -60,9 +67,15 @@ def main():
 
     if not a.data.exists() and a.data.with_name('dataset_v1_parts').exists():
         a.data = a.data.with_name('dataset_v1_parts')   # split copy committed to git (parts < 100 MB)
-    data = pd.read_parquet(a.data)
+    if a.data.is_dir():
+        parts = sorted(a.data.glob('*.parquet'))
+        if not parts:
+            sys.exit(f'no parquet parts found: {a.data}')
+        data = pd.concat([pd.read_parquet(p) for p in parts], ignore_index=True)
+    else:
+        data = pd.read_parquet(a.data)
     print(f'rows={len(data):,} labels={data.binary_label.value_counts().to_dict()}')
-    is_train = time_split(data, a.train_frac)
+    is_train = time_split(data, a.train_frac, group_label=a.time_group == 'source-label')
     if a.split == 'loao':
         if not a.holdout:
             sys.exit('--holdout required for loao')
@@ -85,6 +98,8 @@ def main():
         feats = [f for f in rank.index if f in FEATURES][:a.top_k]
     X = data[feats].to_numpy(np.float32)
     y = data['binary_label'].to_numpy()
+    if set(np.unique(y[tr_idx])) != {0, 1} or set(np.unique(y[is_test])) != {0, 1}:
+        sys.exit('Both benign and attack rows are required in train and test; check label coverage and time split')
     print(f'train rows={len(tr_idx):,} (benign {int((y[tr_idx] == 0).sum()):,}) test rows={int(is_test.sum()):,}')
 
     rf = RandomForestClassifier(n_estimators=a.n_estimators, max_depth=a.max_depth, min_samples_leaf=a.min_leaf,
@@ -107,7 +122,7 @@ def main():
         pred = rf.predict(X[idx])
         m = classification_metrics(y[idx], pred)
         m.update(inference_cost(rf, X[idx], seed=a.seed))
-        m.update(dict(tag=a.tag, split=a.split, holdout=a.holdout or '', train_subset=a.train_subset,
+        m.update(dict(tag=a.tag, split=a.split, time_group=a.time_group, holdout=a.holdout or '', train_subset=a.train_subset,
                       test_subset=name, train_rows=len(tr_idx), train_sec=train_sec, model_mb=size_mb,
                       n_features=len(feats), top_k=a.top_k or len(FEATURES), n_estimators=a.n_estimators,
                       max_depth=a.max_depth, min_leaf=a.min_leaf,

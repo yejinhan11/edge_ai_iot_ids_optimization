@@ -1,0 +1,62 @@
+{
+  "models": [
+    {
+      "model": "native_flows\\baseline.joblib",
+      "features": 67,
+      "trees": 100,
+      "load_verified": true
+    },
+    {
+      "model": "native_flows\\validation_lightweight.joblib",
+      "features": 20,
+      "trees": 20,
+      "load_verified": true
+    },
+    {
+      "model": "native_flows\\validation_selected.joblib",
+      "features": 10,
+      "trees": 100,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\baseline.joblib",
+      "features": 38,
+      "trees": 100,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\C1.joblib",
+      "features": 38,
+      "trees": 20,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\C2.joblib",
+      "features": 38,
+      "trees": 10,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\C3.joblib",
+      "features": 15,
+      "trees": 20,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\C4.joblib",
+      "features": 38,
+      "trees": 20,
+      "load_verified": true
+    },
+    {
+      "model": "legacy_windows\\validation_selected.joblib",
+      "features": 38,
+      "trees": 50,
+      "load_verified": true
+    }
+  ],
+  "test_counts_consistent": true,
+  "recall_consistent": true,
+  "test_not_used_for_selection": true,
+  "native_identifiers_ports_timestamps_labels_excluded": true
+}

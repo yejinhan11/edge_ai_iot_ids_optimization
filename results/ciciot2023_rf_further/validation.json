@@ -1,0 +1,58 @@
+{
+  "partitions_disjoint": true,
+  "cache_file_probes_match": true,
+  "test_hash_matches_archive": true,
+  "test_rows": 6297039,
+  "all_test_models_reload_verified": true,
+  "selection_frozen_before_test": true,
+  "limits": {
+    "f1_macro_drop": 0.005,
+    "fpr_increase": 0.001,
+    "fnr_increase": 0.001
+  },
+  "metrics_recomputed_from_all_confusion_matrices": true,
+  "archive_checks": [
+    {
+      "candidate": "t100_d0_l1",
+      "seed": 42,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    },
+    {
+      "candidate": "t100_d0_l1",
+      "seed": 43,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    },
+    {
+      "candidate": "t100_d0_l1",
+      "seed": 44,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    },
+    {
+      "candidate": "t20_d0_l1",
+      "seed": 42,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    },
+    {
+      "candidate": "t20_d0_l1",
+      "seed": 43,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    },
+    {
+      "candidate": "t20_d0_l1",
+      "seed": 44,
+      "training_indices_match": true,
+      "exact_confusion_match": true
+    }
+  ],
+  "final_benchmark": {
+    "method": "separate process, saved RFs, n_jobs=1, full 100k warmup, 7 rounds with randomized model order; median per model",
+    "rows": 100000,
+    "benchmark_indices_sha256": "80db6f686db3eda004b257c1a1d4cad8970b21a130f2d7081ccc91b8efe5e8a9",
+    "original_during_training_timings_preserved": true
+  }
+}

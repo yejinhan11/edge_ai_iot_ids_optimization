@@ -1,0 +1,13 @@
+{
+  "python": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\.venv\\Scripts\\python.exe",
+  "prefix": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\.venv",
+  "sklearn": "1.9.1",
+  "numpy": "2.4.6",
+  "pandas": "3.0.6",
+  "parquet_rows": 20990150,
+  "csvs_read": 99,
+  "notebooks_read": 5,
+  "pcap_headers_read": 21,
+  "rf_smoke": "passed",
+  "features": 38
+}

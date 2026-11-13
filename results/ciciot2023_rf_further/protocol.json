@@ -1,0 +1,101 @@
+{
+  "code_hash": "23f9039e4ea43a880c758d385bd9ebb0168a6d6377037e648789a325615fa561",
+  "dataset": "CICIoT2023 archived PCAP-derived dataset_v1_parts",
+  "limitations": [
+    "first 2GB chunks except HTTP_Flood, SlowLoris, BenignTraffic3",
+    "historically observed test; not a fresh independent holdout",
+    "same-capture temporal split; no connection-level purge or external validation",
+    "serialized model MB is not RAM; feature extraction excluded from inference"
+  ],
+  "features": [
+    "Header_Length",
+    "Protocol Type",
+    "Time_To_Live",
+    "Rate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IGMP",
+    "IPv",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Variance"
+  ],
+  "class_weight": "balanced",
+  "training_cap": 1000000,
+  "split": "per-source first 56% fit, next 14% validation, last 30% historical test; final refit first 70%",
+  "selection": "seed42 baseline and tree sweep 5/10/15/20; two smallest passing tree counts (fallback highest macro F1); depths 16/20/24/unlimited and leaves 1/5/10; top three passing configurations by size then latency; 3-seed validation, then freeze selection before test",
+  "acceptance": "each seed must pass its matching 100-tree baseline on validation; final test does not change selection",
+  "limits": {
+    "f1_macro_drop": 0.005,
+    "fpr_increase": 0.001,
+    "fnr_increase": 0.001
+  },
+  "targets": {
+    "primary_mb": 15,
+    "stretch_mb": 10,
+    "latency_ratio_to_c1": 0.7
+  },
+  "benchmark": "single-thread predict, fixed 100000 rows per partition, 5-repeat median after warmup; batch amortized us/row",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "sklearn": "1.9.1",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "cache_origin": "existing balanced-rf cache; shape, feature order and test index hash checked; per-file feature probe checked",
+  "partitions": {
+    "fit_pool": {
+      "rows": 11754494,
+      "benign": 614814,
+      "ddos": 11139680,
+      "sha256": "d8253043fa6a50a5fe15c465d270e7eeaeb1afe950655900711f3e959ed3aa85"
+    },
+    "validation": {
+      "rows": 2938617,
+      "benign": 153701,
+      "ddos": 2784916,
+      "sha256": "ca8800d0c7a66efa62a76e6218eafe72a53c3fb5b605a8a50e97040ea6f8ebe3"
+    },
+    "test": {
+      "rows": 6297039,
+      "benign": 329362,
+      "ddos": 5967677,
+      "sha256": "dc21b234fd46fab7135b1ef14197f3394bc01b18de1b92088b39f4d3e46c86fb"
+    },
+    "refit_pool": {
+      "rows": 14693111,
+      "benign": 768515,
+      "ddos": 13924596,
+      "sha256": "79f5bf7544934a75556f099d7ea3a28044bb0e0b277facdc6616955708fd870d"
+    }
+  }
+}

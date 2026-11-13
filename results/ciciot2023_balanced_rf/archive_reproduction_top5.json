@@ -1,0 +1,33 @@
+{
+  "exact_counts_match": true,
+  "checks": {
+    "n": {
+      "archived": 6297039,
+      "current": 6297039
+    },
+    "n_benign": {
+      "archived": 329362,
+      "current": 329362
+    },
+    "n_ddos": {
+      "archived": 5967677,
+      "current": 5967677
+    },
+    "tn": {
+      "archived": 321948,
+      "current": 321948
+    },
+    "fp": {
+      "archived": 7414,
+      "current": 7414
+    },
+    "fn": {
+      "archived": 82821,
+      "current": 82821
+    },
+    "tp": {
+      "archived": 5884856,
+      "current": 5884856
+    }
+  }
+}

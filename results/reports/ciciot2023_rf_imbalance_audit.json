@@ -1,0 +1,83 @@
+{
+  "source": "results/tables/sweep_features.csv",
+  "scope": "train_subset=all,test_subset=all; features sweep; seed42; 100 trees",
+  "dataset_benign": 1097877,
+  "dataset_ddos": 19892273,
+  "results": [
+    {
+      "features": 5,
+      "accuracy": 0.9856702491440819,
+      "f1_ddos": 0.9923916186134727,
+      "f1_macro": 0.9347387941418679,
+      "benign_precision": 0.7953869985102614,
+      "benign_recall": 0.9774898136397034,
+      "benign_f1": 0.8770859696702632,
+      "ddos_recall": 0.9861217354759649,
+      "balanced_accuracy": 0.9818057745578341,
+      "model_mb": 118.242201,
+      "nodes": 1377528,
+      "fp": 7414,
+      "fn": 82821
+    },
+    {
+      "features": 10,
+      "accuracy": 0.98782284816721,
+      "f1_ddos": 0.9935381463412661,
+      "f1_macro": 0.9440690564011963,
+      "benign_precision": 0.8173185115232373,
+      "benign_recall": 0.9880222976542528,
+      "benign_f1": 0.8945999664611265,
+      "ddos_recall": 0.9878118403526196,
+      "balanced_accuracy": 0.9879170690034362,
+      "model_mb": 99.759321,
+      "nodes": 1146492,
+      "fp": 3945,
+      "fn": 72735
+    },
+    {
+      "features": 15,
+      "accuracy": 0.9908183830527332,
+      "f1_ddos": 0.9951345003452395,
+      "f1_macro": 0.9569096343149048,
+      "benign_precision": 0.8557410896056972,
+      "benign_recall": 0.9916231987903887,
+      "benign_f1": 0.9186847682845702,
+      "ddos_recall": 0.9907739644756243,
+      "balanced_accuracy": 0.9911985816330064,
+      "model_mb": 96.554361,
+      "nodes": 1106430,
+      "fp": 2759,
+      "fn": 55058
+    },
+    {
+      "features": 20,
+      "accuracy": 0.9912176183123529,
+      "f1_ddos": 0.9953466087747764,
+      "f1_macro": 0.958707058740027,
+      "benign_precision": 0.8603526488106978,
+      "benign_recall": 0.9933204194776568,
+      "benign_f1": 0.9220675087052775,
+      "ddos_recall": 0.991101562634841,
+      "balanced_accuracy": 0.9922109910562489,
+      "model_mb": 91.557721,
+      "nodes": 1043972,
+      "fp": 2200,
+      "fn": 53103
+    },
+    {
+      "features": 38,
+      "accuracy": 0.9918730057095089,
+      "f1_ddos": 0.9956952764457532,
+      "f1_macro": 0.9615907624807498,
+      "benign_precision": 0.8695547053509751,
+      "benign_recall": 0.9936877964063857,
+      "benign_f1": 0.9274862485157466,
+      "ddos_recall": 0.9917728456148012,
+      "balanced_accuracy": 0.9927303210105934,
+      "model_mb": 95.319001,
+      "nodes": 1090988,
+      "fp": 2079,
+      "fn": 49097
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+source_pcap,split,label,rows
+Friday-WorkingHours,train_before_cap,BENIGN,570909
+Friday-WorkingHours,train_before_cap,DDoS,23496
+Friday-WorkingHours,test,BENIGN,244675
+Friday-WorkingHours,test,DDoS,10069
+Monday-WorkingHours,train_before_cap,BENIGN,807037
+Monday-WorkingHours,test,BENIGN,345873
+Thursday-WorkingHours,train_before_cap,BENIGN,624123
+Thursday-WorkingHours,test,BENIGN,267481
+Tuesday-WorkingHours,train_before_cap,BENIGN,755230
+Tuesday-WorkingHours,test,BENIGN,323669
+Wednesday-workingHours,train_before_cap,BENIGN,765153
+Wednesday-workingHours,test,BENIGN,327922

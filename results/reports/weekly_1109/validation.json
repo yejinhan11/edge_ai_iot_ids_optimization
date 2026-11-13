@@ -1,0 +1,11 @@
+{
+  "mlp_narrative_segments_preserved": 9,
+  "editable_tables": 8,
+  "embedded_figures": 2,
+  "pages": 6,
+  "chapter_order": [
+    "MLP quantization",
+    "RF lightweighting"
+  ],
+  "source_mlp_unchanged": true
+}

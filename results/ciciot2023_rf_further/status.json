@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "completed": 52,
+  "selected": {
+    "candidate": "t10_d20_l1",
+    "trees": 10,
+    "depth": 20,
+    "leaf": 1
+  },
+  "elapsed_sec": 1758.3261606693268
+}

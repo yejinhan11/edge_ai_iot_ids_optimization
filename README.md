@@ -1,7 +1,35 @@
-# Edge-AI IoT IDS optimization (CICIoT2023 DDoS)
+# Edge-AI IoT IDS optimization (CICIoT2023 / CICIDS2017 DDoS)
 
 전자공학종합설계 프로젝트. CICIoT2023 PCAP에서 공식 39-feature를 추출해 Random Forest로 DDoS를 탐지하고,
 **전체 / Camera / 트래픽 최다 기기(Echo Dot 1) / AMCREST 카메라** subset 간 정확도·F1·추론속도·모델 크기·메모리를 비교한다.
+
+## 최신 진행 보고: RF 추가 경량화 (2026-11-13)
+
+- [진행 전체 목차·완료/예정 구분](docs/EXPERIMENT_INDEX.md)
+- [목표 설정 이유·설계·결과·한계·발표 질의응답](results/ciciot2023_rf_further/REPORT.md)
+- [Word 진행 보고서](results/reports/RF_추가경량화_진행보고.docx)
+- 추가 RF 실험: seed 42에서 27개 설정 탐색, 후보 seed 3회 검증 및 최종 테스트까지 총 52회 학습·평가.
+- 10트리·최대 깊이 24 비교 후보: 평균 **10.002185 MB**, Macro F1 **0.958770**. 3회 모두 성능 허용치·15 MB·속도 목표 충족, 10 MB 이하는 2/3회. C1 대비 크기 약 60.5%, 추론 시간 약 58.5% 감소.
+- 검증에서 사전 선택한 깊이 20 후보는 테스트 미탐 증가 한도를 초과했다. 깊이 24는 후속 검증 후보로 구분하며, 테스트를 보고 사전 선택 기록을 바꾸지 않았다.
+- 새 PCAP 다운로드는 계획하지 않는다. 고정된 깊이 24 설정의 CICIDS2017 추가 검증은 **예정**이며 기존 CICIDS2017 실험과 구분한다.
+
+재현 명령과 로컬 캐시 요구사항은 [진행 목차](docs/EXPERIMENT_INDEX.md#재현과-산출물)를 참고한다.
+
+## CICIDS2017 RF
+
+5일치 PCAPNG 전체에서 기존과 같은 **38개 특징·10패킷 윈도우**를 추출해 BENIGN / DDoS 이진 RF 기준선을 실행했다. 다른 공격·라벨 충돌·미매칭·혼합 윈도우는 제외했다.
+
+- 보존 윈도우: 5,065,637개 (BENIGN 5,032,072 / DDoS 33,565).
+- 학습: 최대 100만 행, RF 100 trees, balanced, seed 42. 테스트: 1,519,689행.
+- Accuracy **99.949%**, F1-macro **0.9812**, DDoS precision **94.134%**, recall **98.490%**.
+- 금요일 후반에 DDoS가 몰려 날짜 전체의 70/30 분할에서는 학습 DDoS가 0개였다. 따라서 **파일·라벨별 시간순 70/30**을 사용했다. 공통 시각 경계의 미래 예측 평가와는 다르다.
+- 이번 범위는 RF 기준선이다. 특징 수·트리 수·깊이 sweep이나 LOAO는 실행하지 않았다.
+
+[실행 방법·라벨 매칭·분할 정책](docs/CICIDS2017_RF.md) · [실험 결과와 검증](results/cicids2017_ddos_benign/REPORT.md)
+
+추가 비교: [기존 10패킷 방식과 CICIDS2017 공식 flow RF의 특징 선택·경량화 결과](results/cicids2017_comparison/REPORT.md). 기존 방식 33개, 공식 flow 방식 43개 후보를 검증하고, 선택 모델을 seed 3회로 평가했다. 표본 단위가 달라 두 방식의 F1 차이를 특징만의 효과로 단정하지 않는다. [실험 설계와 LOAO 적용 제한](docs/CICIDS2017_COMPARISON.md).
+
+원본 PCAPNG·라벨 ZIP·가공 parquet·모델 바이너리·복구 접두부·실행 로그·가상환경은 업로드하지 않는다. 코드, 설정 JSON, 지표 CSV, 특징 중요도, 감사·검증 기록과 추출 메타데이터를 포함한다. CICIDS2017을 다시 실행하려면 원본 데이터를 별도로 준비해야 한다.
 
 ## 데이터 (data/, git 제외)
 
@@ -15,7 +43,7 @@
 
 **중요 – PCAP 잘림.** 13개 중 11개 파일 크기가 정확히 2,048,000,0xx bytes로, 원본이 `tcpdump -C 2048`로
 분할된 것 중 **첫 번째 청크만** 보유한 상태다. 논문(Table 3)의 행 수와 비교하면 flood류는 원본의 약 5~10%다.
-따라서 이 저장소의 모든 결과는 "각 공격 캡처의 앞 약 2 GB 구간"에 대한 것이다.
+따라서 아래 CICIoT2023 PCAP 실험 결과는 "각 공격 캡처의 앞 약 2 GB 구간"에 대한 것이다. CICIDS2017은 별도로 5일치 전체 파일을 처리했다.
 
 | PCAP | 로컬 패킷 수 | 논문 CSV 행 수 (×100 패킷/행) | 로컬 비율(대략) |
 |---|---:|---:|---:|
@@ -72,9 +100,9 @@ python src/train_rf.py --tag loao_syn --split loao --holdout DDoS-SYN_Flood
 git clone git@github.com:yejinhan11/edge_ai_iot_ids_optimization.git   # 또는 https 주소
 cd edge_ai_iot_ids_optimization
 python -m venv .venv
-.venv\Scriptsctivate            # Windows (macOS/Linux: source .venv/bin/activate)
+.venv\Scripts\activate            # Windows (macOS/Linux: source .venv/bin/activate)
 pip install -r requirements.txt
-python src	rain_rf.py --tag check   # git에 포함된 data/processed/dataset_v1_parts/ 로 바로 실행됨
+python src/train_rf.py --tag check   # git에 포함된 data/processed/dataset_v1_parts/ 로 바로 실행됨
 ```
 
 git에 **포함된** 데이터: `data/processed/dataset_v1_parts/`(학습 데이터, 6개 zstd parquet ≈ 220 MB),
@@ -101,3 +129,7 @@ notebooks/             Colab 노트북 아카이브 (실행 결과 포함)
 results/tables/        결과 CSV,  results/models/ 학습 모델(git 제외)
 docs/references/       논문 PDF
 ```
+
+## CICIoT2023 RF 클래스 균형 추가 검증
+
+[실험 방법·상세 결과·그래프](results/ciciot2023_balanced_rf/REPORT.md): 동일 학습량 100만 행에서 기존 비율과 정상/DDoS 50:50을 비교한 18개 모델 결과입니다. 기존 결과를 보존하며, 정상 오탐·DDoS 미탐과 경량화 비용을 함께 정리했습니다.

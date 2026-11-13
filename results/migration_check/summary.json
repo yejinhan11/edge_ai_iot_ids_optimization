@@ -1,0 +1,91 @@
+{
+  "files": {
+    "copy_files": 290,
+    "copy_bytes": 35078054071,
+    "cicids_pcaps": [
+      {
+        "file": "Friday-WorkingHours.pcap",
+        "expected": "7366c552425956e610bd69f57feb7e7a",
+        "actual": "7366c552425956e610bd69f57feb7e7a",
+        "match": true
+      },
+      {
+        "file": "Monday-WorkingHours.pcap",
+        "expected": "8525733283c2c5f98891a0dca036e7c7",
+        "actual": "8525733283c2c5f98891a0dca036e7c7",
+        "match": true
+      },
+      {
+        "file": "Thursday-WorkingHours.pcap",
+        "expected": "043d37cd08de4e165a5498d0d6564a65",
+        "actual": "043d37cd08de4e165a5498d0d6564a65",
+        "match": true
+      },
+      {
+        "file": "Tuesday-WorkingHours.pcap",
+        "expected": "2d976fec5b8b3676c1c4152a9195bba7",
+        "actual": "2d976fec5b8b3676c1c4152a9195bba7",
+        "match": true
+      },
+      {
+        "file": "Wednesday-workingHours.pcap",
+        "expected": "a8c9cd0ea22e3df6acc1c5972f38f0bf",
+        "actual": "a8c9cd0ea22e3df6acc1c5972f38f0bf",
+        "match": true
+      }
+    ],
+    "labels_zip_crc": "passed",
+    "labels_zip_members": [
+      {
+        "name": "TrafficLabelling /",
+        "bytes": 0
+      },
+      {
+        "name": "TrafficLabelling /Wednesday-workingHours.pcap_ISCX.csv",
+        "bytes": 285642925
+      },
+      {
+        "name": "TrafficLabelling /Tuesday-WorkingHours.pcap_ISCX.csv",
+        "bytes": 174696560
+      },
+      {
+        "name": "TrafficLabelling /Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+        "bytes": 92030223
+      },
+      {
+        "name": "TrafficLabelling /Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+        "bytes": 108723183
+      },
+      {
+        "name": "TrafficLabelling /Monday-WorkingHours.pcap_ISCX.csv",
+        "bytes": 268649908
+      },
+      {
+        "name": "TrafficLabelling /Friday-WorkingHours-Morning.pcap_ISCX.csv",
+        "bytes": 75386737
+      },
+      {
+        "name": "TrafficLabelling /Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "bytes": 96101069
+      },
+      {
+        "name": "TrafficLabelling /Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+        "bytes": 101874777
+      }
+    ]
+  },
+  "environment": {
+    "python": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\.venv\\Scripts\\python.exe",
+    "prefix": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\.venv",
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "parquet_rows": 20990150,
+    "csvs_read": 99,
+    "notebooks_read": 5,
+    "pcap_headers_read": 21,
+    "rf_smoke": "passed",
+    "features": 38
+  },
+  "errors": {}
+}

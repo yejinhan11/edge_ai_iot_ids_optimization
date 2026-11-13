@@ -1,0 +1,18 @@
+{
+  "data": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\data\\processed\\cicids2017_ddos_benign",
+  "tag": "cicids2017_ddos_benign",
+  "split": "time",
+  "holdout": null,
+  "train_frac": 0.7,
+  "time_group": "source-label",
+  "train_subset": "all",
+  "max_train": 1000000,
+  "n_estimators": 100,
+  "top_k": null,
+  "importance": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\results\\tables\\rf_v1_feature_importance.csv",
+  "min_leaf": 1,
+  "max_depth": null,
+  "seed": 42,
+  "out_dir": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\results\\cicids2017_ddos_benign\\tables",
+  "model_dir": "D:\\\ud55c\uc608\uc9c4\\dev\\edge_ai_iot_ids_optimization\\results\\cicids2017_ddos_benign\\models"
+}

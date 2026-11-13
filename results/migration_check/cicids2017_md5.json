@@ -1,0 +1,32 @@
+[
+  {
+    "file": "Friday-WorkingHours.pcap",
+    "expected": "7366c552425956e610bd69f57feb7e7a",
+    "actual": "7366c552425956e610bd69f57feb7e7a",
+    "match": true
+  },
+  {
+    "file": "Monday-WorkingHours.pcap",
+    "expected": "8525733283c2c5f98891a0dca036e7c7",
+    "actual": "8525733283c2c5f98891a0dca036e7c7",
+    "match": true
+  },
+  {
+    "file": "Thursday-WorkingHours.pcap",
+    "expected": "043d37cd08de4e165a5498d0d6564a65",
+    "actual": "043d37cd08de4e165a5498d0d6564a65",
+    "match": true
+  },
+  {
+    "file": "Tuesday-WorkingHours.pcap",
+    "expected": "2d976fec5b8b3676c1c4152a9195bba7",
+    "actual": "2d976fec5b8b3676c1c4152a9195bba7",
+    "match": true
+  },
+  {
+    "file": "Wednesday-workingHours.pcap",
+    "expected": "a8c9cd0ea22e3df6acc1c5972f38f0bf",
+    "actual": "a8c9cd0ea22e3df6acc1c5972f38f0bf",
+    "match": true
+  }
+]

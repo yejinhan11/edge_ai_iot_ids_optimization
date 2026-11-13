@@ -1,0 +1,104 @@
+{
+  "files": [
+    {
+      "file": "rf_v1.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_base.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_base_loao_slowloris.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_base_loao_syn.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c1.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c1_loao_slowloris.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c1_loao_syn.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c2.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c2_loao_slowloris.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c2_loao_syn.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c3.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c3_loao_slowloris.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c3_loao_syn.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c4.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c4_loao_slowloris.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_final_c4_loao_syn.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_loao_slowloris.csv",
+      "rows": 4
+    },
+    {
+      "file": "rf_loao_syn.csv",
+      "rows": 4
+    },
+    {
+      "file": "rf_test3.csv",
+      "rows": 4
+    },
+    {
+      "file": "rf_v1_audio.csv",
+      "rows": 5
+    },
+    {
+      "file": "rf_v1_cam.csv",
+      "rows": 4
+    },
+    {
+      "file": "sweep_depth.csv",
+      "rows": 72
+    },
+    {
+      "file": "sweep_features.csv",
+      "rows": 45
+    },
+    {
+      "file": "sweep_trees.csv",
+      "rows": 24
+    }
+  ],
+  "unique_fits": 60,
+  "stable_checks": 4114,
+  "exact_matches": 3547,
+  "within_1e_12": 4114
+}
